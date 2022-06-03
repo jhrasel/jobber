@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    clear: both;
+    color: #000000;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.custome_width {
+    max-width: 1440px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.container-fluid{
+    padding: 0 60px;
+}
+
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root{
+    --bg_color1: #ff8a00;
+    --bg_color2: #001935;
+    --text_color: #969696;
+    --hover_color:#e07900;
+}
+
+.wh{
+    color: #FFF;
+}
+
+.blk{
+    color: #000;
+}
+
+h1{
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 600;
+    color: var(--bg_color2);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--bg_color1);
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+h4{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--text_color);
+}
+
+a{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all linear .3s;
+}
+
+.box_shodow{
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 10%);
+}
+
+.d_flex{
+    display: flex;
+    align-items: center;
+}
+
+.d_justify{
+    justify-content: space-between;
+}
+
+.space_ptb{
+    padding: 90px 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 99;
+}
+
+.navbar-brand img{
+    height: 28px;
+}
+
+.nav-item{
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item .nav-link{
+    font-size: 16px;
+    color: #FFF;
+    padding: 0 !important;
+    height: 80px;
+    line-height: 80px;
+}
+
+
+.nav-item .nav-link:hover{
+    color: var(--bg_color1);
+}
+
+.nav-item .nav-link.active{
+    color: var(--bg_color1);
+}
+
+.nav-item .nav-link svg{
+    margin-left: 5px;
+}
+
+/* Dropdown */
+
+.nav-item .drop_down {
+    position: absolute;
+    background: #FFF;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    min-width: 270px;
+    border-radius: 5px;
+    transition: all linear .3s;
+    transform: translateY(15px);
+    opacity: 1;
+}
+
+.nav-item:hover{
+    overflow: visible;
+}
+
+.nav-item:hover .drop_down{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.nav-item .drop_down li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bg_color2);
+    padding: 15px 0;
+    position: relative;
+    display: block;
+}
+
+.nav-item .drop_down li a:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--bg_color1);
+    opacity: 0;
+    transition: all linear .2s;
+}
+
+.nav-item .drop_down li a:hover{
+    transform: translateX(15px);
+}
+
+.nav-item .drop_down li a:hover::after{
+    opacity: 1;
+    left: -15px;
+}
+
+/* send Dropdown */
+
+.nav-item .drop_down li {
+    position: relative;
+}
+
+ul.drop_down.send.box_shodow {
+    left: 108%;
+    top: 0;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.nav-item .drop_down li:hover ul.drop_down.send.box_shodow{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* post_a_job */
+.navbar .post_a_job_part a{
+    margin-right: 40px;
+    color: #FFF;
+}
+
+.navbar .post_a_job_part a:hover{
+    color: var(--bg_color1);
+}
+
+.navbar .post_a_job_part a.post_a_job{
+    background: #FFF;
+    color: var(--bg_color2);
+    padding: 10px 25px;
+    border-radius: 3px;
+}
+
+.navbar .post_a_job_part a.post_a_job:hover{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.navbar .post_a_job_part a.post_a_job:hover svg{
+    color: #FFF;
+}
+
+.navbar .post_a_job_part a svg{
+    margin-right: 5px;
+    color: var(--bg_color1);
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#banner {
+    background: url('../images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 300px 0 255px 0;
+    position: relative;
+}
+
+#banner::after{
+    background: rgba(0, 25, 53, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.banner_content{
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    z-index: 9;
+}
+
+.banner_content h1 span{
+    color: var(--bg_color1);
+}
+
+.banner_content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.banner_search{
+    margin-top: 45px;
+    justify-content: space-between;
+}
+
+.search_item{
+    width: 470px;
+}
+
+.search_item .text{
+    margin-bottom: 10px;
+}
+
+.banner_search .custom_input{
+    position: relative;
+}
+
+.banner_search .custom_input input{
+    padding: 20px 20px;
+    padding-left: 40px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 100%;
+    color: var(--bg_color2);
+}
+
+.banner_search .custom_input input::placeholder{
+    color: var(--text_color);
+}
+
+.banner_search .custom_input .search_icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--bg_color1);
+}
+
+.find_job a {
+    background: var(--bg_color1);
+    padding: 20px;
+    margin-top: 34px;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+.find_job a svg{
+    margin-right: 5px;
+}
+
+.find_job a:hover{
+    background: var(--hover_color);
+}
+
+.banner_search .custom_input .detect{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner_search .custom_input .detect a{
+    color: var(--text_color);
+    padding: 10px 20px;
+    padding-left: 10px;
+    border-left: 1px solid #eeeeee;
+}
+
+.banner_search .custom_input .detect a svg{
+    margin-left: 5px;
+    color: var(--bg_color1);
+}
+
+/* tranding */
+.banner_content .tranding{
+    margin-top: 40px;
+}
+
+.banner_content .tranding li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--bg_color1);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.banner_content .tranding li a{
+    color: #FFF;
+    font-weight: 400;
+}
+
+.banner_content .tranding li a:hover{
+    color: var(--bg_color1);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Choose Your Sector PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#ChooseYourSector{
+    border-bottom: 1px solid #eee;
+}
+
+.ChooseYourSector_left p{
+    margin-top: 30px;
+}
+
+.ChooseYourSector_left a{
+    margin-top: 40px;
+    padding: 12px 30px;
+    color: var(--bg_color2);
+    border: 1px solid #eee;
+}
+
+.ChooseYourSector_left a:hover{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+/* ChooseYourSector_right */
+.ChooseYourSector_right {
+    padding: 30px 20px;
+    color: var(--text_color);
+    transition: all linear 0.3s ;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: block;
+    text-align: center;
+}
+
+.ChooseYourSector_right.last_child{
+    border-bottom: none;
+}
+
+.ChooseYourSector_right img{
+    height: 50px;
+}
+
+.ChooseYourSector_right h3{
+    color: var(--bg_color2);
+    margin-top: 20px;
+}
+
+.ChooseYourSector_right p{
+    margin-top: 5px;
+}
+
+.ChooseYourSector_right:hover{
+    box-shadow: 0px 10px 25px -6px rgb(0 0 0 / 15%) ;
+}
+
+#ChooseYourSector .row.right {
+    --bs-gutter-x: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Jobs You May Be Interested In PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.jobs_content{
+    margin-top: 40px;
+}
+
+.jobs_Tabs .nav-item .nav-link {
+    color: var(--text_color);
+    border: none;
+    padding: 10px 30px !important;
+    border-radius: 3px;
+    margin-right: 20px;
+    font-weight: 600;
+    height: unset;
+    line-height: unset;
+}
+
+.jobs_Tabs .nav-item .nav-link.active{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.jobs_Tabs .nav-item{
+    margin: 0;
+}
+
+.jobs_Tabs .nav-tabs{
+    border-bottom: none;
+}
+
+.job_found span{
+    background: var(--bg_color1);
+    padding: 4px 10px;
+    color: #FFF;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Tabs Part */
+.tabs_item{
+    margin-top: 60px;
+}
+
+.tabs_item_part {
+    padding: 25px 20px;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    transition: all linear .2s;
+}
+
+.tabs_item_part:hover .right_text span svg{
+    color: var(--bg_color1);
+}
+
+.tabs_item_part .img{
+    padding: 10px;
+    border: 1px solid #eee;
+    width: 15%;
+    margin-right: 20px;
+}
+
+.tabs_item_part .img img{
+    height: 58px;
+}
+
+.tabs_item_part .middle_text {
+    width: 60%;
+}
+
+.tabs_item_part .right_text{
+    width: 20%;
+    text-align: center;
+}
+
+.tabs_item_part .middle_text h3 a{
+    font-weight: 600;
+    color: var(--bg_color2);
+    font-size: 18px;
+}
+
+.tabs_item_part .middle_text h3 a:hover{
+    color: var(--bg_color1);
+}
+
+.tabs_item_part p{
+    margin-top: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tabs_item_part .middle_text p span{
+    color: var(--bg_color1);
+}
+
+.tabs_item_part p svg{
+    margin-right: 5px;
+}
+
+.tabs_item_part .middle_text p.suitcase svg{
+    color: var(--bg_color1);
+}
+
+.tabs_item_part .right_text span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text_color);
+    margin: auto;
+    transition: all linear .2s;
+}
+
+.tabs_item_part .right_text p{
+    margin-right: 0;
+    margin-top: 20px;
+}
+
+.tabs_item_part:hover{
+    box-shadow: 0px 0px 24px 4px rgb(0 25 53 / 4%);
+}
+
+.tabs_item_part:hover .right_text span{
+    box-shadow: -1px 4px 10px 1px rgb(24 111 201 / 10%);
+}
+
+.tabs_item .view_more{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tabs_item .view_more a{
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    color: var(--bg_color2);
+}
+
+.tabs_item .view_more a:hover{
+    color: #FFF;
+    background: var(--bg_color1);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */

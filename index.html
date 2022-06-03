@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="frontend_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/slick.css">
+    <link rel="stylesheet" href="frontend_assets/css/style.css">
+    <link rel="stylesheet" href="frontend_assets/css/media.css">
+</head>
+
+<body>
+
+    
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            <img src="frontend_assets/images/logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d_flex" href="#">Listing <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="drop_down box_shodow">
+                        <li><a href="">Job Grid</a></li>
+                        <li><a href="">Job Listing</a></li>
+                        <li><a href="">Job Details</a></li>
+                        <li><a href="">Job Details Map</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employer <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="drop_down box_shodow">
+                        <li><a href="">Employee Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Employee Details</a></li>
+                        <li><a href="">Employee Details Map</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Candidates <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="drop_down box_shodow">
+                        <li><a href="">Candidates Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Candidates Details</a></li>
+                        <li><a href="">Candidates Details Map</a></li>
+                        <li>
+                            <a href="">Dashboard</a>
+
+                            <ul class="drop_down send box_shodow">
+                                <li><a href="">Employee Grid</a></li>
+                                <li><a href="">Employee Listing</a></li>
+                                <li><a href="">Employee Details</a></li>
+                                <li><a href="">Employee Details Map</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">My Resume</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+            
+            <form class="post_a_job_part">
+                <a href="" class="signIn"><i class="far fa-user"></i> Sign in</a>
+                <a href="" class="post_a_job"><i class="fas fa-plus-circle"></i> Post a Job</a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="banner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="banner_content">
+
+                    <h1>Drop <span>Resume & Get</span> Your Desired Job</h1>
+                    <p class="wh">Find Jobs, Employment & Career Opportunities</p>
+
+                    <!-- Search Part -->
+                    <div class="banner_search d_flex">
+
+                        <!-- Item -->
+                        <div class="search_item">
+
+                            <div class="text d_flex d_justify">
+                                <h3 class="wh">What</h3>
+                                <h4 class="wh">e.g. job, company, title</h4>
+                            </div>
+
+                            <div class="custom_input">
+                                <input type="text" name="" placeholder="Job title, skill or company">
+
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="search_item">
+
+                            <div class="text d_flex d_justify">
+                                <h3 class="wh">Where</h3>
+                                <h4 class="wh">e.g. city, county or postcodee</h4>
+                            </div>
+
+                            <div class="custom_input">
+                                <input type="text" name="" placeholder="Town, city or postcode">
+
+                                <div class="search_icon">
+                                    <i class="far fa-compass"></i>
+                                </div>
+
+                                <div class="detect">
+                                    <a href="">Detect <i class="fas fa-crosshairs"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="find_job">
+                            <a href=""> <i class="fas fa-search"></i> Find Job</a>
+                        </div>
+
+                    </div>
+
+                    <!-- tranding Keywords -->
+                    <ul class="tranding">
+                        <li>Trending Keywords :</li>
+                        <li><a href="">Automotive,</a></li>
+                        <li><a href="">Education,</a></li>
+                        <li><a href="">Health and Care Engineering</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START Choose Your Sector PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="ChooseYourSector" class="space_ptb">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Part -->
+            <div class="col-lg-3">
+
+                <div class="ChooseYourSector_left">
+
+                    <h2>Choose Your <br> Sector</h2>
+                    <p>I truly believe Augustine’s words are true and if you look at history you know it is true.</p>
+                    <a href="">View More Jobs</a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Part -->
+            <div class="col-lg-9">
+
+                <div class="row right">
+
+                    <!-- item 1 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right">
+                            <img src="frontend_assets/images/account.png" alt="">
+                            <h3>Accountancy</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right">
+                            <img src="frontend_assets/images/conversation.png" alt="">
+                            <h3>Apprenticeships</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right">
+                            <img src="frontend_assets/images/save-money.png" alt="">
+                            <h3>Banking</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+                    
+                    <!-- item 4 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right">
+                            <img src="frontend_assets/images/mortarboard.png" alt="">
+                            <h3>Education</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                    <!-- item 5 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right last_child">
+                            <img src="frontend_assets/images/worker.png" alt="">
+                            <h3>Engineering</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                    <!-- item 6 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right last_child">
+                            <img src="frontend_assets/images/businessman.png" alt="">
+                            <h3>Estate Agency</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                    <!-- item 7 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right last_child">
+                            <img src="frontend_assets/images/coding.png" alt="">
+                            <h3>IT & Telecoms</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                    <!-- item 8 -->
+                    <div class="col-lg-3">
+                        
+                        <a href="" class="ChooseYourSector_right last_child">
+                            <img src="frontend_assets/images/balance.png" alt="">
+                            <h3>Legal</h3>
+                            <p>301 Open Position </p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START Jobs You May Be Interested In PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="JobsInterested" class="space_ptb">
+
+    <div class="container">
+
+        <!-- header -->
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+                    <h2>Jobs You May Be Interested In</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Jobs Content -->
+        <div class="jobs_content">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="jobs_Tabs d_flex d_justify">
+
+                        <!-- Tabs Button -->
+                        <div class="tabs_Button">
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="Feature-tab" data-bs-toggle="tab" data-bs-target="#Feature" type="button" role="tab" aria-controls="Feature" aria-selected="true">Feature Jobs</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="Recent-tab" data-bs-toggle="tab" data-bs-target="#Recent" type="button" role="tab" aria-controls="Recent" aria-selected="false">Recent Jobs</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="Popular-tab" data-bs-toggle="tab" data-bs-target="#Popular" type="button" role="tab" aria-controls="Popular" aria-selected="false">Popular Jobs</button>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- Job Found -->
+                        <div class="job_found d_flex">
+                            <span>24123</span>
+                            <h3>Job Found</h3>
+                        </div>
+
+                    </div>
+
+                    <!-- tabs Item -->
+                    <div class="tabs_item">
+
+                        <div class="tab-content" id="myTabContent">
+
+                            <!-- Feature -->
+                            <div class="tab-pane fade show active" id="Feature" role="tabpanel" aria-labelledby="Feature-tab">
+
+                                <div class="row">
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/01.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/02.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/17.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/18.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/20.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/19.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-6 m-auto">
+                                        <div class="view_more">
+                                            <a href="">View More Jobs</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Recent -->
+                            <div class="tab-pane fade" id="Recent" role="tabpanel" aria-labelledby="Recent-tab">
+                                
+                                <div class="row">
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/01.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/02.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/17.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/18.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/20.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/19.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-6 m-auto">
+                                        <div class="view_more">
+                                            <a href="">View More Jobs</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Popular -->
+                            <div class="tab-pane fade" id="Popular" role="tabpanel" aria-labelledby="Popular-tab">
+
+                                <div class="row">
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/01.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/02.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/17.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/18.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/20.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="col-lg-6">
+
+                                        <div class="tabs_item_part d_flex d_justify">
+                                            <!-- img -->
+                                            <div class="img">
+                                                <img src="frontend_assets/images/19.svg" alt="">
+                                            </div>
+
+                                            <!-- Middle -->
+                                            <div class="middle_text">
+                                                <h3><a href="">Anticoagulation Receptionist</a></h3>
+                                                <p>via <span>Fast Systems Consultants</span></p>
+                                                <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                                                <p> <i class="fas fa-filter"></i>Accountancy</p>
+                                                <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right_text">
+                                                <span><i class="far fa-heart"></i></span>
+                                                <p><i class="far fa-clock"></i> 1H ago</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-6 m-auto">
+                                        <div class="view_more">
+                                            <a href="">View More Jobs</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+    <!-- JS Link -->
+    <script src="frontend_assets/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/all.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/custom.js"></script>
+</body>
+
+</html>
