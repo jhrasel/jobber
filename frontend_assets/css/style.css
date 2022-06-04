@@ -657,17 +657,160 @@ ul.drop_down.send.box_shodow {
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START  PART
+    START Featured Candidates PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+#FeaturedCandidates .feature_part{
+    margin-right: 80px;
+}
 
+#FeaturedCandidates .header p{
+    margin-top: 30px;
+}
 
+.Featured_content{
+    margin-top: 50px;
+}
+
+.Featured_content .img{
+    border: none;
+}
+
+.Featured_content .img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.Featured_content .tabs_item_part {
+    align-items: center;
+}
+
+.Featured_content .tabs_item_part .right_text p {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.TopCompanies_content{
+    margin-top: 50px;
+}
+
+.TopCompanies_content .TopCompanies_item{
+    padding: 30px 20px;
+    border: 1px solid #eeeeee;
+    transition: all linear .3s;
+    text-align: center;
+}
+
+.TopCompanies_content .TopCompanies_item .img img{
+    height: 60px;
+}
+
+.TopCompanies_content .TopCompanies_item .text{
+    margin-top: 20px;
+}
+
+.TopCompanies_content .TopCompanies_item .text a{
+    font-size: 18px;
+    color: var(--bg_color2);
+}
+
+.TopCompanies_content .TopCompanies_item .text p svg{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.TopCompanies_content .TopCompanies_item .text a.position {
+    color: #FFF;
+    background: var(--bg_color2);
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+
+.TopCompanies_content .TopCompanies_item .text a.position:hover{
+    background: var(--bg_color1);
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-dots .owl-dot{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background:  #dfdfdf!important;
+    margin: 0 5px ;
+}
+
+.owl-dots .owl-dot.active{
+    background: var(--bg_color1) !important;
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START  PART
+    START Easiest Way To Use PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+#EasiestWay .header h2::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+#EasiestWay .header p{
+    margin-top: 20px;
+}
 
+.EasiestWay_content{
+    margin-top: 50px;
+    position: relative;
+}
+
+.EasiestWay_item{
+    padding: 20px;
+    text-align: center;
+}
+
+.EasiestWay_item .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: auto;
+}
+
+.EasiestWay_item .img svg{
+    transition: all linear .3s;
+}
+
+.EasiestWay_item:hover .img svg{
+    color: var(--bg_color1);
+}
+
+.EasiestWay_item .text{
+    margin-top: 20px;
+}
+
+.EasiestWay_item .text h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.EasiestWay_item .text p{
+    margin-top: 10px;
+}
+
+.EasiestWay_content .overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+}
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
