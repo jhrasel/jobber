@@ -116,7 +116,7 @@ h2::after{
 }
 
 h3{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
 }
@@ -158,6 +158,24 @@ a{
 .space_ptb{
     padding: 90px 0;
 }
+
+a.view_more{
+    margin-top: 40px;
+    padding: 12px 30px;
+    color: var(--bg_color2);
+    border: 1px solid #eee;
+}
+
+a.view_more:hover{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+p.martop{
+    margin-top: 20px;
+}
+
+
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
     START Navbar PART
@@ -460,18 +478,6 @@ ul.drop_down.send.box_shodow {
     margin-top: 30px;
 }
 
-.ChooseYourSector_left a{
-    margin-top: 40px;
-    padding: 12px 30px;
-    color: var(--bg_color2);
-    border: 1px solid #eee;
-}
-
-.ChooseYourSector_left a:hover{
-    background: var(--bg_color1);
-    color: #FFF;
-}
-
 /* ChooseYourSector_right */
 .ChooseYourSector_right {
     padding: 30px 20px;
@@ -494,6 +500,7 @@ ul.drop_down.send.box_shodow {
 .ChooseYourSector_right h3{
     color: var(--bg_color2);
     margin-top: 20px;
+    font-size: 16px;
 }
 
 .ChooseYourSector_right p{
@@ -645,15 +652,428 @@ ul.drop_down.send.box_shodow {
     text-align: center;
 }
 
-.tabs_item .view_more a{
-    padding: 10px 20px;
-    border: 1px solid #eee;
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Featured Candidates PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#FeaturedCandidates .feature_part{
+    margin-right: 80px;
+}
+
+#FeaturedCandidates .header p{
+    margin-top: 30px;
+}
+
+.Featured_content{
+    margin-top: 50px;
+}
+
+.Featured_content .img{
+    border: none;
+}
+
+.Featured_content .img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.Featured_content .tabs_item_part {
+    align-items: center;
+}
+
+.Featured_content .tabs_item_part .right_text p {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.TopCompanies_content{
+    margin-top: 50px;
+}
+
+.TopCompanies_content .TopCompanies_item{
+    padding: 30px 20px;
+    border: 1px solid #eeeeee;
+    transition: all linear .3s;
+    text-align: center;
+}
+
+.TopCompanies_content .TopCompanies_item .img img{
+    height: 60px;
+}
+
+.TopCompanies_content .TopCompanies_item .text{
+    margin-top: 20px;
+}
+
+.TopCompanies_content .TopCompanies_item .text a{
+    font-size: 18px;
     color: var(--bg_color2);
 }
 
-.tabs_item .view_more a:hover{
+.TopCompanies_content .TopCompanies_item .text p svg{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.TopCompanies_content .TopCompanies_item .text a.position {
     color: #FFF;
+    background: var(--bg_color2);
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+
+.TopCompanies_content .TopCompanies_item .text a.position:hover{
     background: var(--bg_color1);
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-dots .owl-dot{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background:  #dfdfdf!important;
+    margin: 0 5px ;
+}
+
+.owl-dots .owl-dot.active{
+    background: var(--bg_color1) !important;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Easiest Way To Use PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#EasiestWay .header h2::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#EasiestWay .header p{
+    margin-top: 20px;
+}
+
+.EasiestWay_content{
+    margin-top: 50px;
+    position: relative;
+}
+
+.EasiestWay_item{
+    padding: 20px;
+    text-align: center;
+}
+
+.EasiestWay_item .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: auto;
+}
+
+.EasiestWay_item .img svg{
+    transition: all linear .3s;
+}
+
+.EasiestWay_item:hover .img svg{
+    color: var(--bg_color1);
+}
+
+.EasiestWay_item .text{
+    margin-top: 20px;
+}
+
+.EasiestWay_item .text h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.EasiestWay_item .text p{
+    margin-top: 10px;
+}
+
+.EasiestWay_content .overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Looking For Job PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.looking_for_job_item{
+    padding: 45px;
+    background: var(--bg_color1);
+    border-radius: 3px;
+    align-items: flex-start;
+}
+
+.looking_for_job_item.right{
+    background: var(--bg_color2);
+}
+
+.looking_for_job_item .img{
+    margin-right: 20px;
+}
+
+.looking_for_job_item .img svg{
+    font-size: 50px;
+    color: var(--bg_color2);
+}
+
+.looking_for_job_item.right .img svg{
+    font-size: 50px;
+    color: var(--bg_color1);
+}
+
+.looking_for_job_item p{
+    margin-top: 10px;
+}
+
+.looking_for_job_item a{
+    margin-top: 10px;
+    color: var(--bg_color2);
+}
+
+.looking_for_job_item.right a{
+    color: var(--bg_color1);
+}
+
+.looking_for_job_item a:hover{
+    color: #FFF;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Buy Our Plans And Packages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.BuyOurPlans_item {
+    border: 1px solid #f6f6f6;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.BuyOurPlans_item.middle {
+    box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 4%);
+    padding: 35px 0;
+    margin-top: -25px;
+}
+
+.BuyOurPlans_item h4 {
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--bg_color2);
+    transition: all linear .3s;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.BuyOurPlans_item h4 .top {
+    position: absolute;
+    top: -25px;
+    left: -65%;
+    width: 100%;
+}
+
+.BuyOurPlans_item h4 .right {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+
+.BuyOurPlans_item h4 span{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text_color);
+    font-weight: 400;
+}
+
+.BuyOurPlans_item h5{
+    font-size: 18px;
+    font-weight: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: var(--bg_color2);
+}
+
+.BuyOurPlans_item ul li{
+    padding: 20px 15px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text_color);
+}
+
+.BuyOurPlans_item ul li:last-child{
+    border-bottom: 0;
+}
+
+.BuyOurPlans_item ul li.bgs{
+    background: #f6f6f6;
+}
+
+.BuyOurPlans_item ul li a.view_more{
+    margin-top: 0;
+}
+
+.BuyOurPlans_item:hover h4{
+    color: var(--bg_color1);
+}
+
+.BuyOurPlans_item.middle h4{
+    color: var(--bg_color1);
+}
+
+.BuyOurPlans_item:hover a{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.BuyOurPlans_item.middle a{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.BuyOurPlans_content .row {
+    --bs-gutter-x: 0;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Why You Choose PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.WhyYouChoose_img{
+    margin-right: 50px;
+}
+
+.WhyYouChoose_img .left_img {
+    margin-top: 20px;
+}
+
+.WhyYouChoose_img .left_img .img.last{
+    margin-top: 20px;
+    position: relative;
+}
+
+.WhyYouChoose_img .left_img .img.last .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg_color2);
+    opacity: .8;
+    z-index: 1;
+}
+
+.WhyYouChoose_img .left_img .img.last .overlay a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color: var(--bg_color1);
+    font-size: 50px;
+}
+
+.WhyYouChoose_img .left_img .img.last .overlay a:hover{
+    color: #FFF;
+}
+
+/* WhyYouChoose_part */
+
+.WhyYouChoose_part{
+    margin-top: 30px;
+}
+
+.WhyYouChoose_part h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.WhyYouChoose_part .item{
+    width: 50%;
+}
+
+.WhyYouChoose_part img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Clients Say About Us PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Clients_Say_AboutUs .header{
+    text-align: center;
+}
+
+#Clients_Say_AboutUs .header h2::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Clients_Say_AboutUs .client_content{
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.client_content .owl-carousel .owl-item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.client_content .coma{
+    margin-top: 30px;
+}
+
+.client_content .coma svg{
+    font-size: 40px;
+    color: var(--text_color);
+}
+
+.client_content .coma h3{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.client_content .owl-nav .owl-prev {
+    position: absolute;
+    top: 15px;
+    left: 41%;
+}
+
+.client_content .owl-nav .owl-next {
+    position: absolute;
+    top: 15px;
+    right: 41%;
+}
+
+.client_content span{
+    font-size: 40px;
+    color: var(--text_color);
+    transition: all linear .3s;
+}
+
+.client_content span:hover{
+    color: var(--bg_color1);
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -663,12 +1083,6 @@ ul.drop_down.send.box_shodow {
 
 
 
-/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START  PART
---------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-
-
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
     START  PART
@@ -677,9 +1091,12 @@ ul.drop_down.send.box_shodow {
 
 
 
+
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
     START  PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 
 
 
