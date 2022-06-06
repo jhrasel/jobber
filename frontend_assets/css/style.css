@@ -467,6 +467,19 @@ ul.drop_down.send.box_shodow {
     color: var(--bg_color1);
 }
 
+
+
+/* job Grid Banner */
+.jog_grid_page #banner {
+    height: 400px;
+    padding: 150px;
+}
+
+.jog_grid_page .find_job a{
+    margin-top: 0;
+}
+
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
     START Choose Your Sector PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1225,11 +1238,176 @@ ul.drop_down.send.box_shodow {
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START  PART
+    START Job Grid Pages PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+#showing_jobs .header h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#showing_jobs .header h3 span{
+    color: var(--bg_color1);
+}
+
+#showing_jobs .header_part{
+    margin-top: 30px;
+}
+
+#showing_jobs .header_part a{
+    padding: 10px 30px;
+    background: var(--bg_color2);
+    color: #FFF;
+    border-radius: 3px;
+}
+
+#showing_jobs .header_part a:hover{
+    background: #00254f;
+}
+
+#showing_jobs .header_part a svg{
+    margin-right: 10px;
+}
+
+#showing_jobs .header_part .right p{
+    color: var(--bg_color2);
+}
+
+#showing_jobs .header_part .right a{
+    background: none;
+    border: 2px solid var(--bg_color1);
+    color: var(--bg_color1);
+    margin-left: 10px;
+
+}
+
+#showing_jobs .header_part .right a:hover{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.show_filter_item {
+    margin-top: 30px;
+}
 
 
+
+.show_filter_item .card.card-body {
+    padding: 0;
+    border: none;
+}
+
+.show_filter_item h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--bg_color2);
+}
+
+.show_filter_item ul{
+    margin-top: 20px;
+}
+
+.show_filter_item ul li{
+    display: flex;
+    align-items: center;
+}
+
+.show_filter_item ul li label{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text_color);
+    margin-left: 6px;
+}
+
+.show_filter_item ul li input{
+    border: 2px solid #dfdfdf;
+}
+
+.job_post_item{
+    margin-top: 30px;
+    padding-top: 40px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.job_post_item img{
+    height: 60px;
+}
+
+.job_post_item .text{
+    padding: 20px;
+    padding-top: 30px;
+
+}
+
+.job_post_item .text a{
+    color: unset;
+    font-weight: 400;
+}
+
+.job_post_item .text h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.job_post_item ul li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text_color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.job_post_item ul li span{
+    color: var(--bg_color1);
+}
+
+.job_post_item ul li svg{
+    margin-right: 3px;
+}
+
+.job_post_item ul li:last-child{
+    color: var(--bg_color1);
+    margin-bottom: 0;
+}
+
+.job_post_item .item_footer{
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.job_post_item .item_footer span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text_color);    
+}
+
+.job_post_item .item_footer a{
+    color: var(--text_color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job_post_item:hover {
+    box-shadow: 0px 0px 24px 4px rgb(0 25 53 / 4%);
+}
+
+.job_post_item:hover .item_footer a{
+    color: #e74c3c;
+    box-shadow: -1px 4px 10px 1px rgb(24 111 201 / 10%);
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
     START  PART
