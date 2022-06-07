@@ -1269,8 +1269,9 @@ ul.drop_down.send.box_shodow {
     margin-right: 10px;
 }
 
-#showing_jobs .header_part .right p{
+#showing_jobs .header_part .right p {
     color: var(--bg_color2);
+    font-size: 15px;
 }
 
 #showing_jobs .header_part .right a{
@@ -1284,6 +1285,58 @@ ul.drop_down.send.box_shodow {
 #showing_jobs .header_part .right a:hover{
     background: var(--bg_color1);
     color: #FFF;
+}
+
+#showing_jobs .header_part .right span.select2-selection.select2-selection--single {
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+}
+
+#showing_jobs .header_part .right span.select2-dropdown.select2-dropdown--below {
+    background: #f9f9f9;
+    padding: 7px;
+    border: 1px solid #eeeeee;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #eee !important;
+}
+
+.select2-dropdown{
+    border: 1px solid #eee !important;
+}
+
+#showing_jobs .header_part .right input.select2-search__field {
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 4%) !important;
+    padding: 4px 10px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: var(--bg_color1);
+}
+
+#showing_jobs .header_part .right span.select2.select2-container.select2-container--default {
+    width: 120px !important;
+    margin-left: 15px;
+}
+
+#showing_jobs .header_part .right .select2-container--default .select2-selection--single .select2-selection__arrow {
+    display: none;
+}
+
+#showing_jobs .header_part .right .select2-container .select2-selection--single .select2-selection__rendered{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+span.select2-dropdown.select2-dropdown--below {
+    padding: 6px;
+}
+
+.select2-search--dropdown {
+    padding: 4px 0;
 }
 
 .show_filter_item {
@@ -1315,14 +1368,65 @@ ul.drop_down.send.box_shodow {
 
 .show_filter_item ul li label{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     color: var(--text_color);
     margin-left: 6px;
 }
 
-.show_filter_item ul li input{
+.show_filter_item ul li input[type="checkbox"]{
     border: 2px solid #dfdfdf;
+    height: 18px;
+    width: 18px;
+}
+
+.show_filter_item .form-check-input:checked[type=checkbox] {
+    background-color: var(--bg_color1);
+    border: 2px solid var(--bg_color1);
+}
+
+.show_filter_item  .form-check-input:focus{
+    box-shadow: none;
+}
+
+.show_filter_item  .form-check-input.Temporary{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.show_filter_item  .form-check-input.Freelance{
+    background-color: #53b427;
+    border-color: #53b427;
+}
+
+.show_filter_item  .form-check-input.partTime{
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.show_filter_item  .form-check-input.fullTime{
+    background-color: #186fc9;
+    border-color: #186fc9;
+}
+
+.show_filter_item  .form-check-input.fullTime:checked[type=checkbox]{
+    background-color: #186fc9;
+    border-color: #186fc9;
+}
+
+.show_filter_item  .form-check-input.partTime:checked[type=checkbox]{
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.show_filter_item  .form-check-input.Freelance:checked[type=checkbox]{
+    background-color: #53b427;
+    border-color: #53b427;
+}
+
+.show_filter_item  .form-check-input.Temporary:checked[type=checkbox]{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
 }
 
 .job_post_item{
@@ -1407,6 +1511,37 @@ ul.drop_down.send.box_shodow {
 .job_post_item:hover .item_footer a{
     color: #e74c3c;
     box-shadow: -1px 4px 10px 1px rgb(24 111 201 / 10%);
+}
+
+/* PageChange */
+.PageChange{
+    margin-top: 50px;
+    border-radius: 3px;
+    border: 2px solid #eeeeee;
+    padding: 5px 22px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.PageChange ul li{
+    display: inline-block;
+}
+
+.PageChange ul li a{
+    padding: 8px 16px;
+    color: var(--text_color);
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.PageChange ul li a.active{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.PageChange ul li a:hover{
+    background: var(--bg_color1);
+    color: #FFF;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1513,4 +1648,130 @@ ul.drop_down.send.box_shodow {
 
 .social_icon a:last-child{
     margin-right: 0;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.othersFooter{
+    background: #f6f6f6;
+    padding-top: 200px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.footer_bgs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer_item input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--bg_color2);
+    margin-top: 5px;
+}
+
+.footer_item input::placeholder{
+    font-size: 14px;
+    color: var(--text_color);
+}
+
+#footer .footer_item ul li a.getNotification{
+    background: var(--bg_color1);
+    color: #FFF;
+    padding: 8px 30px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#footer .footer_item ul li a.getNotification:hover{
+    background: var(--hover_color);
+}
+
+#footer .footer_item ul li.PlayStore a.item {
+    max-width: 90%;
+    align-items: center;
+}
+
+#footer .footer_item ul li.PlayStore a.item svg{
+    color: var(--bg_color2);
+    font-size: 40px;
+    margin-top: 0;
+}
+
+li.PlayStore {
+    margin-top: 15px;
+}
+
+#footer .footer_item ul li.PlayStore a.item:hover svg{
+    color: #FFF;
+}
+
+#footer .footer_item ul li.PlayStore a.item h3{
+    color: var(--bg_color2);
+}
+
+#footer .footer_item ul li.PlayStore a.item:hover h3{
+    color: #FFF;
+}
+
+/* Others_tiny_footer */
+.Others_tiny_footer{
+    background: var(--bg_color2);
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.Others_tiny_footer .left ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.Others_tiny_footer .left ul li a{
+    color: #FFF;
+    font-weight: 400;
+}
+
+.Others_tiny_footer .left ul li a:hover{
+    color: var(--bg_color1);
+}
+
+.Others_tiny_footer .right{
+    text-align: right;
+}
+
+.Others_tiny_footer .right p{
+    color: #FFF;
+    font-weight: 400;
+}
+
+.Others_tiny_footer .right p a{
+    font-weight: 400;
+    color: var(--bg_color1);
+}
+
+
+/* looking_for_job */
+#looking_for_job.Ohters_jobsPages {
+    position: absolute;
+    width: 100%;
+    top: -35px;
+    left: 0;
+    z-index: 9;
+}
+
+#looking_for_job.Ohters_jobsPages .text {
+    width: 100%;
+}
+
+#looking_for_job.Ohters_jobsPages h4{
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
