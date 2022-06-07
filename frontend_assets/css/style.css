@@ -117,7 +117,7 @@ h2::after{
 
 h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
 }
 
@@ -175,6 +175,12 @@ p.martop{
     margin-top: 20px;
 }
 
+ul li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text_color);
+}
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -450,9 +456,6 @@ ul.drop_down.send.box_shodow {
 }
 
 .banner_content .tranding li{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
     color: var(--bg_color1);
     display: inline-block;
     margin-right: 10px;
@@ -809,7 +812,6 @@ ul.drop_down.send.box_shodow {
 
 .EasiestWay_item .text h3{
     font-size: 18px;
-    font-weight: 700;
 }
 
 .EasiestWay_item .text p{
@@ -926,9 +928,6 @@ ul.drop_down.send.box_shodow {
 .BuyOurPlans_item ul li{
     padding: 20px 15px;
     border-bottom: 1px solid #eeeeee;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
     color: var(--text_color);
 }
 
@@ -1016,7 +1015,6 @@ ul.drop_down.send.box_shodow {
 
 .WhyYouChoose_part h3{
     font-size: 16px;
-    font-weight: 600;
 }
 
 .WhyYouChoose_part .item{
@@ -1185,7 +1183,6 @@ ul.drop_down.send.box_shodow {
 .blog_content .text h3{
     margin-top: 10px;
     color: var(--bg_color2);
-    font-weight: 600;
 }
 
 .blog_content .text h6{
@@ -1243,7 +1240,6 @@ ul.drop_down.send.box_shodow {
 
 #showing_jobs .header h3{
     font-size: 18px;
-    font-weight: 600;
 }
 
 #showing_jobs .header h3 span{
@@ -1452,16 +1448,18 @@ span.select2-dropdown.select2-dropdown--below {
     font-weight: 400;
 }
 
-.job_post_item .text h3{
+.job_post_item .text h3 a{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
+    color: var(--bg_color2);
+}
+
+.job_post_item .text h3 a:hover{
+    color: var(--bg_color1);
 }
 
 .job_post_item ul li{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
     color: var(--text_color);
     display: inline-block;
     margin-bottom: 10px;
@@ -1686,7 +1684,6 @@ span.select2-dropdown.select2-dropdown--below {
 
 .EasiestWay_item .text h3{
     font-size: 18px;
-    font-weight: 700;
 }
 
 .EasiestWay_item .text p{
@@ -1699,6 +1696,325 @@ span.select2-dropdown.select2-dropdown--below {
     left: 0;
     z-index: -1;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Job Detail PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#jobDetails .tabs_item {
+    border: 1px solid #eee;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+#jobDetails .tabs_item_part .img {
+    width: 11%;
+}
+
+.OfferedSalary{
+    border: 1px solid #eee;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.OfferedSalary_item{
+    margin-bottom: 30px;
+}
+
+.OfferedSalary_item.last_child{
+    margin-bottom: 0;
+}
+
+.OfferedSalary_item .img{
+    margin-right: 15px;
+}
+
+.OfferedSalary_item .img img{
+    height: 35px;
+}
+
+.OfferedSalary_item h4{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text_color);
+}
+
+.OfferedSalary_item h3{
+    font-size: 14px;
+}
+
+.JobDescription {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.JobDescription:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.JobDescription p{
+    margin-top: 30px;
+}
+
+.JobDescription p.italic{
+    font-style: italic;
+}
+
+.JobDescription ul{
+    margin-top: 20px;
+}
+
+.JobDescription ul li{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.JobDescription ul li:last-child{
+    margin-bottom: 0;
+}
+
+.JobDescription ul li svg{
+    color: var(--bg_color1);
+    margin-right: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Apply for Job */
+.apply_jobs a{
+    color: #FFF;
+    background: var(--bg_color1);
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.apply_jobs a svg{
+    margin-right: 5px;
+}
+
+.applyLinkdin{
+    margin-top: 30px;
+}
+
+.applyLinkdin a{
+    color: var(--text_color);
+}
+
+.applyLinkdin a svg{
+    margin-right: 10px;
+}
+
+.applyLinkdin .linkdin a {
+    padding: 10px 13px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+}
+
+.applyLinkdin .linkdin a span{
+    color: #06cdff;
+    margin-right: 5px;
+}
+
+.applyLinkdin .share_item {
+    position: relative;
+}
+
+.applyLinkdin .share_item .hover {
+    background: var(--bg_color2);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    transition: all linear .3s;
+    transform: translateY(10px);
+    opacity: 0;
+    text-align: center;
+    width: 160px;
+}
+
+.applyLinkdin .share_item:hover .hover{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.applyLinkdin .share_item .hover::after{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: var(--bg_color2) transparent transparent transparent;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+}
+
+.applyLinkdin .hover a{
+    margin-right: 5px;
+}
+
+.applyLinkdin .hover a:last-child{
+    margin-right: 0;
+}
+
+.applyLinkdin .hover a:hover{
+    color: var(--bg_color1);
+}
+
+/* MapsPart */
+.MapsPart{
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin-top: 30px;
+}
+
+.map_img iframe{
+    border-radius: 5px;
+}
+
+.MapsPart ul{
+    margin-top: 20px;
+}
+
+.MapsPart ul li{
+    margin-bottom: 10px;
+}
+
+.MapsPart ul li:last-child{
+    margin-bottom: 0;
+}
+
+.MapsPart ul li a{
+    color: var(--text_color);
+    font-weight: 400;
+}
+
+.MapsPart ul li a svg{
+    margin-right: 5px;
+}
+
+/* job_d_days */
+.job_d_days{
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.job_d_days .img{
+    margin-right: 15px;
+}
+
+.job_d_days .img img{
+    height: 30px;
+}
+
+.job_d_days h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bg_color2);
+}
+
+/* SimilarJobs */
+.SimilarJobs{
+    margin-top: 30px;
+}
+
+.SimilarJobs h3{
+    margin-bottom: 20px;
+}
+
+.SimilarJobs_content{
+    padding: 20px 15px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.SimilarJobs_item{
+    margin-bottom: 20px;
+}
+
+.SimilarJobs_item:last-child{
+    margin-bottom: 0;
+}
+
+.SimilarJobs_item .img {
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px;
+    border: 1px solid #eee;
+    width: 23%;
+}
+
+.SimilarJobs_item img{
+    height: 60px;
+    width: 100%;
+}
+
+.SimilarJobs_item h5 a{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--bg_color2);
+    margin-bottom: 5px;
+}
+
+.SimilarJobs_item h5 a:hover{
+    color: var(--bg_color1);
+}
+
+.SimilarJobs_item ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.SimilarJobs_item ul li a{
+    font-weight: 400;
+    color: var(--text_color);
+}
+
+.SimilarJobs_item ul li a svg{
+    margin-right: 5px;
+}
+
+.SimilarJobs_item ul li a span{
+    color: var(--bg_color1);
+}
+
+.SimilarJobs_item ul li a.Freelance{
+    color: #53b427;
+}
+
+.SimilarJobs_item ul li a.part_time{
+    color: #ffc107;
+}
+
+.SimilarJobs_item ul li a.Temporary{
+    color: #e74c3c;
+}
+
+.SimilarJobs_item ul li a.Fulltime{
+    color: #186fc9;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 

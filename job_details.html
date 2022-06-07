@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    
+    <link rel="stylesheet" href="frontend_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_assets/css/style.css">
+    <link rel="stylesheet" href="frontend_assets/css/media.css">
+    
+
+</head>
+
+<body>
+
+<div class="jog_grid_page">
+
+    
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            <img src="frontend_assets/images/logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link d_flex" href="job_grid.html">Job List </a>
+
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Job Grid</a></li>
+                        <li><a href="">Job Listing</a></li>
+                        <li><a href="">Job Details</a></li>
+                        <li><a href="">Job Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employer List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Employee Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Employee Details</a></li>
+                        <li><a href="">Employee Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Candidates List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Candidates Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Candidates Details</a></li>
+                        <li><a href="">Candidates Details Map</a></li>
+                        <li>
+                            <a href="">Dashboard</a>
+
+                            <ul class="drop_down send box_shodow">
+                                <li><a href="">Employee Grid</a></li>
+                                <li><a href="">Employee Listing</a></li>
+                                <li><a href="">Employee Details</a></li>
+                                <li><a href="">Employee Details Map</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">My Resume</a></li>
+                    </ul> -->
+
+                </li>
+
+            </ul>
+            
+            <form class="post_a_job_part">
+                <a href="" class="signIn"><i class="far fa-user"></i> Sign in</a>
+                <a href="" class="post_a_job"><i class="fas fa-plus-circle"></i> Post a Job</a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="banner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="banner_content">
+
+                    <!-- Search Part -->
+                    <div class="banner_search d_flex">
+
+                        <!-- Item -->
+                        <div class="search_item">
+
+                            <div class="custom_input">
+                                <input type="text" name="" placeholder="What">
+
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="search_item">
+
+                            <div class="custom_input">
+                                <input type="text" name="" placeholder="Where">
+
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="find_job">
+                            <a href=""> <i class="fas fa-search"></i> Find Job</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Job Details PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="jobDetails" class="space_ptb">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- left Part -->
+            <div class="col-lg-8">
+
+                <div class="tabs_item">
+
+                    <div class="tabs_item_part d_flex d_justify">
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_assets/images/01.svg" alt="">
+                        </div>
+
+                        <!-- Middle -->
+                        <div class="middle_text">
+                            <h3><a>Payroll and Office Administrator</a></h3>
+                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                            <p> <i class="fas fa-phone-alt"></i> (123) 345-6789</p>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right_text">
+                            <span><i class="far fa-heart"></i></span>
+                            <p><i class="far fa-clock"></i> 1H ago</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Offered Salary -->
+                <div class="OfferedSalary">
+
+                    <div class="row">
+
+                        <!-- item -->
+                        <div class="col-lg-4">
+
+                            <div class="OfferedSalary_item d_flex">
+
+                                <div class="img">
+                                    <img src="frontend_assets/images/debit-card.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h4>Offered Salary</h4>
+                                    <h3>£15,000 - £20,000</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-lg-4">
+
+                            <div class="OfferedSalary_item d_flex">
+
+                                <div class="img">
+                                    <img src="frontend_assets/images/gender.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h4>Gender</h4>
+                                    <h3>Female</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-lg-4">
+
+                            <div class="OfferedSalary_item d_flex">
+
+                                <div class="img">
+                                    <img src="frontend_assets/images/bar-chart.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h4>Career Level</h4>
+                                    <h3>Executive</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-lg-4">
+
+                            <div class="OfferedSalary_item d_flex last_child">
+
+                                <div class="img">
+                                    <img src="frontend_assets/images/apartment.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h4>Industry</h4>
+                                    <h3>Management</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-lg-4">
+
+                            <div class="OfferedSalary_item d_flex last_child">
+
+                                <div class="img">
+                                    <img src="frontend_assets/images/medal.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h4>Experience</h4>
+                                    <h3>2 Years</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-lg-4">
+
+                            <div class="OfferedSalary_item d_flex last_child">
+
+                                <div class="img">
+                                    <img src="frontend_assets/images/mortarboard.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h4>Qualification</h4>
+                                    <h3>Bachelor Degree</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Job Description -->
+                <div class="JobDescription">
+                    <h3>Job Description</h3>
+                    <p>One of the main areas that I work on with my clients is shedding these non-supportive beliefs and replacing them with beliefs that will help them to accomplish their desires.</p>
+                    <p class="italic">
+                        It is truly amazing the damage that we, as parents, can inflict on our children. So why do we do it? For the most part, we don’t do it intentionally or with malice. In the majority of cases, the cause is a well-meaning but unskilled or un-thinking parent, who says the wrong thing at the wrong time, and the message sticks – as simple as that!
+                    </p>
+                </div>
+
+                <!-- Required Knowledge, Skills, and Abilities -->
+                <div class="JobDescription">
+                    <h3>Required Knowledge, Skills, and Abilities</h3>
+                    
+                    <ul>
+                        <li><i class="far fa-check-circle"></i> Commitment – understanding the price and having the willingness to pay that price</li>
+                        <li><i class="far fa-check-circle"></i> Belief – believing in yourself and those around you</li>
+                        <li><i class="far fa-check-circle"></i> Taking action – practice Ready, Fire, Aim…</li>
+                        <li><i class="far fa-check-circle"></i> You will drift aimlessly until you arrive back at the original dock</li>
+                        <li><i class="far fa-check-circle"></i> You will run aground and become hopelessly stuck in the mud</li>
+                    </ul>
+
+                </div>
+
+                <!-- Education + Experience -->
+                <div class="JobDescription">
+                    <h3>Education + Experience</h3>
+                    
+                    <ul>
+                        <li><i class="far fa-check-circle"></i> You will sail along until you collide with an immovable object, after which you will sink to the bottom</li>
+                        <li><i class="far fa-check-circle"></i> Clarity – developing the Vision</li>
+                        <li><i class="far fa-check-circle"></i> Focus – having a plan</li>
+                        <li><i class="far fa-check-circle"></i> Give yourself the power of responsibility. Remind yourself the only thing stopping you is yourself.
+                        </li>
+                        <li><i class="far fa-check-circle"></i> Do it today. Remind yourself of someone you know who died suddenly and the fact that there is no guarantee that tomorrow will come.</li>
+                        <li><i class="far fa-check-circle"></i> Now go push your own limits and succeed!</li>
+                        <li><i class="far fa-check-circle"></i> Let success motivate you. Find a picture of what epitomizes success to you and then pull it out when you are in need of motivation.</li>
+                        <li><i class="far fa-check-circle"></i> Belief – believing in yourself and those around you</li>
+                        <li><i class="far fa-check-circle"></i> So, make the decision to move forward. Commit your decision to paper, just to bring it into focus. Then, go for it!</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Apply Job -->
+            <div class="col-lg-4">
+
+                <!-- Apply Job -->
+                <div class="apply_jobs">
+                    <a href=""><i class="far fa-paper-plane"></i> Apply for Job</a>
+                </div>
+
+                <!-- Share Linkdin -->
+                <div class="applyLinkdin d_flex d_justify">
+
+                    <div class="linkdin">
+                        <a href=""><span>in</span> Apply with Linkedin</a>
+                    </div>
+
+                    <div class="share_item">
+
+                        <a href="" class="Share"><i class="fas fa-share-alt"></i>Share</a>
+
+                        <div class="hover">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-pinterest"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="share_item">
+                        <a href="" class="Share"><i class="fas fa-print"></i>Print</a>
+                    </div>
+                   
+
+                </div>
+
+                <!-- Map Part -->
+                <div class="MapsPart">
+
+                    <div class="map_img">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440397.013442554!2d26.691198795769363!3d48.255832343253616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d0436a96a9fe3d%3A0x9dafc89ce4ff4d29!2sEnvato.best!5e0!3m2!1sen!2sbd!4v1654622104919!5m2!1sen!2sbd" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <ul>
+                        <li><a href=""> <i class="fas fa-link"></i> www.infojob.com</a></li>
+                        <li><a href="tel:(456) 478-2589"> <i class="fas fa-phone-alt"></i> +(456) 478-2589</a></li>
+                        <li><a href="mailto:support@jobber.demo"> <i class="fas fa-envelope"></i> support@jobber.demo</a></li>
+                    </ul>
+
+                </div>
+                
+                <!-- 30 Days -->
+                <div class="job_d_days d_flex">
+                    <div class="img">
+                        <img src="frontend_assets/images/wall-clock.png" alt="">
+                    </div>
+                    <h5>35 Days</h5>
+                </div>
+
+                <!-- 35697 Displayed -->
+                <div class="job_d_days d_flex">
+                    <div class="img">
+                        <img src="frontend_assets/images/research.png" alt="">
+                    </div>
+                    <h5>35697 Displayed</h5>
+                </div>
+
+                <!-- 35697 Displayed -->
+                <div class="job_d_days d_flex">
+                    <div class="img">
+                        <img src="frontend_assets/images/headhunting.png" alt="">
+                    </div>
+                    <h5>300-500 Application</h5>
+                </div>
+
+                <!-- Similar Jobs -->
+                <div class="SimilarJobs">
+                    <h3>Similar Jobs</h3>
+
+                    <div class="SimilarJobs_content">
+
+                        <!-- item -->
+                        <div class="SimilarJobs_item d_flex">
+
+                            <!-- Img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/01.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+                                <h5><a href="">Designer Required</a></h5>
+                                <ul>
+                                    <li><a href="">via <span>Trout Design Ltd</span></a></li>
+                                    <li><a href="" class="Freelance"><i class="fas fa-briefcase"></i> Freelance</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="SimilarJobs_item d_flex">
+
+                            <!-- Img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/02.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+                                <h5><a href="">Designer Required</a></h5>
+                                <ul>
+                                    <li><a href="">via <span> LawnHopper</span></a></li>
+                                    <li><a href="" class="part_time"><i class="fas fa-briefcase"></i> Part-Time</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="SimilarJobs_item d_flex">
+
+                            <!-- Img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/08.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+                                <h5><a href="">Designer Required</a></h5>
+                                <ul>
+                                    <li><a href="">via <span> LawnHopper</span></a></li>
+                                    <li><a href="" class="Temporary"><i class="fas fa-briefcase"></i> Temporary</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="SimilarJobs_item d_flex">
+
+                            <!-- Img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/06.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+                                <h5><a href="">Designer Required</a></h5>
+                                <ul>
+                                    <li><a href="">via <span> LawnHopper</span></a></li>
+                                    <li><a href="" class="Fulltime"><i class="fas fa-briefcase"></i> Full time</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<footer id="footer" class="othersFooter">
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Looking For Job PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="looking_for_job" class="Ohters_jobsPages">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Part -->
+            <div class="col-lg-6">
+
+                <div class="looking_for_job_item d_flex">
+
+                    <div class="img">
+                        <img src="frontend_assets/images/team (1).png" alt="">
+                    </div>
+
+                    <div class="text d_flex d_justify">
+                        <div class="">
+                            <h4>Jobseeker</h4>
+                            <h3 class="wh">Looking For Job?</h3>
+                        </div>
+                        <a href="">Apply now <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+
+                <div class="looking_for_job_item d_flex right">
+
+                    <div class="img">
+                        <img src="frontend_assets/images/headhunting.png" alt="">
+                    </div>
+
+                    <div class="text d_flex d_justify">
+                        <div class="">
+                            <h4>Recruiter</h4>
+                            <h3 class="wh">Are You Recruiting?</h3>
+                        </div>
+                        <a href="">Post a job <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="footer_bgs">
+        <svg class="footer-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="85px">
+            <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.001 L1923.000,-0.001 L1923.000,84.999 C1608.914,41.669 1279.532,19.653 962.500,19.000 C635.773,18.326 323.692,40.344 -0.000,84.999 C-0.000,-83.334 -0.000,168.332 -0.000,-0.001 Z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Trending Companies</h3>
+
+                    <ul>
+                        <li><a href="">Shortcodes</a></li>
+                        <li><a href="">Job Page</a></li>
+                        <li><a href="">Job Page Alternative</a></li>
+                        <li><a href="">Resume Page</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>For Employers</h3>
+
+                    <ul>
+                        <li><a href="">Browse Candidates</a></li>
+                        <li><a href="">Browse Categories</a></li>
+                        <li><a href="">Employer Dashboard</a></li>
+                        <li><a href="">Add Job</a></li>
+                        <li><a href="">Job Packages</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Trending Job</h3>
+
+                    <ul>
+                        <li><a href="">Sign Up to our Newsletter to get the latest news and offers.</a></li>
+                        <li><input type="text" name="" placeholder="Enter Email"></li>
+                        <li><a href="" class="getNotification">Get Notified</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Download App</h3>
+
+                    <ul>
+
+                        <li><a href="">Download the latest Slick new job apps now</a></li>
+
+                        <li class="PlayStore">
+                            <a href="" class="item d_flex">
+
+                                <div class="img">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+    
+                                <div class="text">
+                                    <h4>Download on the </h4>
+                                    <h3>App Store</h3>
+                                </div>
+    
+                            </a>
+                        </li>
+
+                        <li class="PlayStore">
+                            <a href="" class="item d_flex">
+
+                                <div class="img">
+                                    <i class="fab fa-google-play"></i>
+                                </div>
+    
+                                <div class="text">
+                                    <h4>Get it on </h4>
+                                    <h3>Google Play</h3>
+                                </div>
+    
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tiny Footer -->
+    <div class="Others_tiny_footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- left -->
+                <div class="col-lg-6">
+                   
+                    <div class="left">
+
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">TeamContact</a></li>
+                            <li><a href="">Contact</a></li> 
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-6">
+                   
+                    <div class="right">
+
+                        <p>©Copyright 2022 <a href="">System Decoder</a> All Rights Reserved</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+
+
+
+    <!-- JS Link -->
+    <script src="frontend_assets/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_assets/js/owl.carousel.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/all.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/custom.js"></script>
+</body>
+
+</html>
