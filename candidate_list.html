@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    
+    <link rel="stylesheet" href="frontend_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_assets/css/style.css">
+    <link rel="stylesheet" href="frontend_assets/css/media.css">
+    
+
+</head>
+
+<body>
+
+<div class="jog_grid_page">
+
+    
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_assets/images/logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link d_flex" href="job_grid.html">Job List </a>
+
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Job Grid</a></li>
+                        <li><a href="">Job Listing</a></li>
+                        <li><a href="">Job Details</a></li>
+                        <li><a href="">Job Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="employee_grid.html">Employer List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Employee Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Employee Details</a></li>
+                        <li><a href="">Employee Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="candidate_list.html">Candidates List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Candidates Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Candidates Details</a></li>
+                        <li><a href="">Candidates Details Map</a></li>
+                        <li>
+                            <a href="">Dashboard</a>
+
+                            <ul class="drop_down send box_shodow">
+                                <li><a href="">Employee Grid</a></li>
+                                <li><a href="">Employee Listing</a></li>
+                                <li><a href="">Employee Details</a></li>
+                                <li><a href="">Employee Details Map</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">My Resume</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard_candidate.html">Dashboard Candidates</a>
+                </li>
+
+            </ul>
+            
+            <form class="post_a_job_part">
+                <a href="" class="signIn"><i class="far fa-user"></i> Sign in</a>
+                <a href="" class="post_a_job"><i class="fas fa-plus-circle"></i> Post a Job</a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="banner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="banner_content">
+
+                    <!-- Search Part -->
+                    <div class="banner_search d_flex">
+
+                        <!-- Item -->
+                        <div class="search_item">
+
+                            <div class="custom_input">
+                                <input type="text" name="" placeholder="What">
+
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="search_item">
+
+                            <div class="custom_input">
+                                <input type="text" name="" placeholder="Where">
+
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item -->
+                        <div class="find_job">
+                            <a href=""> <i class="fas fa-search"></i> Find Job</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Employee PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="showing_jobs" class="space_ptb employeePart">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Part -->
+            <div class="col-lg-3">
+
+                <!-- Search -->
+                <div class="search">
+                    <input type="text" name="" placeholder="Search Keywords">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <!-- All Location -->
+                <div class="search location">
+                    <input type="text" name="" placeholder="All Locations">
+                    <i class="fas fa-compass"></i>
+                </div>
+
+                <!-- Date Posted -->
+                <div class="DatePosted">
+
+                    <h3 class="d_flex d_justify">
+                        Date Posted
+                        <a class="" data-bs-toggle="collapse" href="#DatePosted" role="button" aria-expanded="false" aria-controls="DatePosted">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="DatePosted">
+
+                            <div class="card card-body">
+
+                                <ul>
+
+                                    <li>
+                                        <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Last hour</label>
+                                    </li>
+
+                                    <li>
+                                            <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Last 24 hour</label>
+                                    </li>
+
+                                    <li>
+                                            <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Last 7 Days</label>
+                                    </li>
+
+                                    <li>
+                                            <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Last 14 Days</label>
+                                    </li>
+
+                                    <li>
+                                            <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Last 30 Days</label>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Specialism -->
+                <div class="DatePosted">
+
+                    <h3 class="d_flex d_justify">
+                        Specialism
+                        <a class="" data-bs-toggle="collapse" href="#Specialism" role="button" aria-expanded="false" aria-controls="Specialism">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="Specialism">
+
+                            <div class="card card-body">
+                                
+                                <ul>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">IT Contractor</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Charity & Voluntary</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Digital & Creative</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Estate Agency</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Graduate</label>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Job Type -->
+                <div class="DatePosted">
+
+                    <h3 class="d_flex d_justify">
+                        Job Type
+                        <a class="" data-bs-toggle="collapse" href="#JobType" role="button" aria-expanded="false" aria-controls="JobType">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="JobType">
+
+                            <div class="card card-body">
+                                
+                                <ul>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input fullTime" id="lastour">
+                                        <label for="lastour">Full Time</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input partTime" id="lastour">
+                                        <label for="lastour">Part-Time</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input Freelance" id="lastour">
+                                        <label for="lastour">Freelance</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input Temporary" id="lastour">
+                                        <label for="lastour">Temporary</label>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Experience -->
+                <div class="DatePosted">
+
+                    <h3 class="d_flex d_justify">
+                        Experience
+                        <a class="" data-bs-toggle="collapse" href="#Experience" role="button" aria-expanded="false" aria-controls="Experience">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="Experience">
+
+                            <div class="card card-body">
+                                
+                                <ul>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Fresher</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Less than 1 year</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">2 Year</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">3 Year</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">4 Year</label>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Offered Salary -->
+                <div class="DatePosted">
+
+                    <h3 class="d_flex d_justify">
+                        Offered Salary
+                        <a class="" data-bs-toggle="collapse" href="#OfferedSalary" role="button" aria-expanded="false" aria-controls="OfferedSalary">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="OfferedSalary">
+
+                            <div class="card card-body">
+                                
+                                <ul>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">10k - 20k</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">20k - 30k</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">30k - 40k</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">40k - 50k</label>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Gender -->
+                <div class="DatePosted">
+
+                    <h3 class="d_flex d_justify">
+                        Gender
+                        <a class="" data-bs-toggle="collapse" href="#Experience" role="button" aria-expanded="false" aria-controls="Experience">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="Experience">
+
+                            <div class="card card-body">
+                                
+                                <ul>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Male</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Female</label>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Qualification -->
+                <div class="DatePosted last_child">
+
+                    <h3 class="d_flex d_justify">
+                        Qualification
+                        <a class="" data-bs-toggle="collapse" href="#Qualification" role="button" aria-expanded="false" aria-controls="Qualification">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </h3>
+
+                    <!-- dropDown -->
+                    <div class="dropDown_part show_filter_item">
+
+                        <div class="collapse" id="Qualification">
+
+                            <div class="card card-body">
+                                
+                                <ul>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Matriculation</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Intermediate</label>
+                                    </li>
+
+                                    <li>
+                                         <input type="checkbox" class="form-check-input" id="lastour">
+                                        <label for="lastour">Graduate</label>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- add_banner -->
+                <div class="DatePosted last_child add_banner">
+                    <img src="frontend_assets/images/add-banner.png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+
+            <!-- Right Part -->
+            <div class="col-lg-9">
+
+                <div class="header">
+                    <h3>Showing 1-12 of <span>28 Jobs</span></h3>
+
+                    <div class="header_part d_flex d_justify">
+
+                        <!-- left -->
+                        <div class="left">
+                            <a href=""> <i class="fas fa-envelope"></i> Get job alert </a>
+                        </div>
+
+                        <!-- right -->
+                        <div class="right d_flex">
+
+                            <p>Sort By :</p>
+
+                            <select class="js-example-basic-single" name="state">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Job Psst Item -->
+                <div class="row">
+
+                    <!-- item 1-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/01.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 2-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/02.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 3-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/06.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 4-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/08.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 5-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/09.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 6-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/10.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 7-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/17.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- item 8-->
+                    <div class="col-lg-6">
+
+                        <div class="job_post_item">
+
+                            <!-- img -->
+                            <div class="img">
+                                <img src="frontend_assets/images/18.svg" alt="">
+                            </div>
+
+                            <!-- text -->
+                            <div class="text">
+
+                                <h3><a href="job_details.html">Marketing and Communications</a></h3>
+
+                                <ul>
+                                    <li><a href="">via <span>Fast Systems Consultants</span></a></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Wellesley Rd, London</li>
+                                    <li> <i class="fas fa-filter"></i>Accountancy</li>
+                                    <li><i class="fas fa-briefcase"></i> <a href="">Freelance</a></li>
+                                </ul>
+
+                                <div class="item_footer d_flex d_justify">
+                                    <span> <i class="far fa-clock"></i> 1M ago</span>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Number Part -->
+                    <div class="col-lg-7 m-auto">
+
+                        <div class="PageChange">
+
+                            <ul>
+                                <li><a href="">Prev</a></li>
+                                <li><a href="" class="active">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">...</a></li>
+                                <li><a href="">25</a></li>
+                                <li><a href="">Next</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<footer id="footer" class="othersFooter">
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Looking For Job PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="looking_for_job" class="Ohters_jobsPages">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Part -->
+            <div class="col-lg-6">
+
+                <div class="looking_for_job_item d_flex">
+
+                    <div class="img">
+                        <img src="frontend_assets/images/team (1).png" alt="">
+                    </div>
+
+                    <div class="text d_flex d_justify">
+                        <div class="">
+                            <h4>Jobseeker</h4>
+                            <h3 class="wh">Looking For Job?</h3>
+                        </div>
+                        <a href="">Apply now <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+
+                <div class="looking_for_job_item d_flex right">
+
+                    <div class="img">
+                        <img src="frontend_assets/images/headhunting.png" alt="">
+                    </div>
+
+                    <div class="text d_flex d_justify">
+                        <div class="">
+                            <h4>Recruiter</h4>
+                            <h3 class="wh">Are You Recruiting?</h3>
+                        </div>
+                        <a href="">Post a job <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="footer_bgs">
+        <svg class="footer-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="85px">
+            <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.001 L1923.000,-0.001 L1923.000,84.999 C1608.914,41.669 1279.532,19.653 962.500,19.000 C635.773,18.326 323.692,40.344 -0.000,84.999 C-0.000,-83.334 -0.000,168.332 -0.000,-0.001 Z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Trending Companies</h3>
+
+                    <ul>
+                        <li><a href="">Shortcodes</a></li>
+                        <li><a href="">Job Page</a></li>
+                        <li><a href="">Job Page Alternative</a></li>
+                        <li><a href="">Resume Page</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>For Employers</h3>
+
+                    <ul>
+                        <li><a href="">Browse Candidates</a></li>
+                        <li><a href="">Browse Categories</a></li>
+                        <li><a href="">Employer Dashboard</a></li>
+                        <li><a href="">Add Job</a></li>
+                        <li><a href="">Job Packages</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Trending Job</h3>
+
+                    <ul>
+                        <li><a href="">Sign Up to our Newsletter to get the latest news and offers.</a></li>
+                        <li><input type="text" name="" placeholder="Enter Email"></li>
+                        <li><a href="" class="getNotification">Get Notified</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Download App</h3>
+
+                    <ul>
+
+                        <li><a href="">Download the latest Slick new job apps now</a></li>
+
+                        <li class="PlayStore">
+                            <a href="" class="item d_flex">
+
+                                <div class="img">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+    
+                                <div class="text">
+                                    <h4>Download on the </h4>
+                                    <h3>App Store</h3>
+                                </div>
+    
+                            </a>
+                        </li>
+
+                        <li class="PlayStore">
+                            <a href="" class="item d_flex">
+
+                                <div class="img">
+                                    <i class="fab fa-google-play"></i>
+                                </div>
+    
+                                <div class="text">
+                                    <h4>Get it on </h4>
+                                    <h3>Google Play</h3>
+                                </div>
+    
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tiny Footer -->
+    <div class="Others_tiny_footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- left -->
+                <div class="col-lg-6">
+                   
+                    <div class="left">
+
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">TeamContact</a></li>
+                            <li><a href="">Contact</a></li> 
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-6">
+                   
+                    <div class="right">
+
+                        <p>©Copyright 2022 <a href="">System Decoder</a> All Rights Reserved</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+
+
+    <!-- JS Link -->
+    <script src="frontend_assets/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_assets/js/owl.carousel.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/all.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+
+</body>
+
+</html>

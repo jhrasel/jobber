@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    
+    <link rel="stylesheet" href="frontend_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_assets/css/style.css">
+    <link rel="stylesheet" href="frontend_assets/css/apexcharts.css">
+    <link rel="stylesheet" href="frontend_assets/css/media.css">
+    
+
+</head>
+
+<body>
+
+<div class="jog_grid_page DashboardCandidate">
+  
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_assets/images/logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link d_flex" href="job_grid.html">Job List </a>
+
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Job Grid</a></li>
+                        <li><a href="">Job Listing</a></li>
+                        <li><a href="">Job Details</a></li>
+                        <li><a href="">Job Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="employee_grid.html">Employer List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Employee Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Employee Details</a></li>
+                        <li><a href="">Employee Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="candidate_list.html">Candidates List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Candidates Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Candidates Details</a></li>
+                        <li><a href="">Candidates Details Map</a></li>
+                        <li>
+                            <a href="">Dashboard</a>
+
+                            <ul class="drop_down send box_shodow">
+                                <li><a href="">Employee Grid</a></li>
+                                <li><a href="">Employee Listing</a></li>
+                                <li><a href="">Employee Details</a></li>
+                                <li><a href="">Employee Details Map</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">My Resume</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard_candidate.html">Dashboard Candidates</a>
+                </li>
+
+            </ul>
+            
+            <form class="post_a_job_part">
+                <a href="" class="signIn"><i class="far fa-user"></i> Sign in</a>
+                <a href="" class="post_a_job"><i class="fas fa-plus-circle"></i> Post a Job</a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="dashboardBanner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- profile img -->
+            <div class="col-lg-6">
+
+                <div class="profile_part d_flex">
+
+                    <div class="profile_img">
+                        <img src="frontend_assets/images/Featured1.jpg" alt="">
+                        <a href=""><i class="fas fa-pencil-alt"></i></a>
+                    </div>
+
+                    <h2>Felica Queen</h2>
+
+                </div>
+
+            </div>
+
+            <!-- Sklis Parts -->
+            <div class="col-lg-6">
+
+                <div class="dashboardBanner_content">
+
+                    <div class="prograss_part">
+                        <span>85%</span>
+                        <div class="progress">
+                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="parcentage d_flex d_justify">
+
+                        <!-- left -->
+                        <div class="left">
+                            <h2>85%</h2>
+                            <p>Skills increased by job Title.</p>
+                        </div>
+
+                        <!-- right -->
+                        <div class="right">
+                            <a href="">Complete Required Skills</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Navs -->
+        <div class="dashBoard_content">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="dashBoardMenu">
+
+                        <ul>
+
+                            <li><a href="dashboard_candidate.html">Dashboard</a></li>
+                            <li><a href="my_profile.html">My Profile</a></li>
+                            <li><a href="change_password.html">Change Password</a></li>
+                            <li><a href="my_resume.html">My Resume</a></li>
+                            <li><a href="manage_jobs.html">Manage Jobs</a></li>
+                            <li><a href="saved_jobs.html" class="active">Saved Jobs</a></li>
+                            <li><a href="pricing_plan.html">Pricing Plan</a></li>
+                            <li><a href="log_out.html">Log Out</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Total Applications PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="TotalApplications" class="space_ptb"></section>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Recent Applied Jobs PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="RecentAppliedJobs">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="RecentAppliedJobs_content">
+
+                    <h3>Saved Jobs</h3>
+
+                    <!-- item -->
+                    <div class="tabs_item_part d_flex d_justify">
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_assets/images/01.svg" alt="">
+                        </div>
+
+                        <!-- Middle -->
+                        <div class="middle_text">
+                            <h3><a href="">Anticoagulation Receptionist</a></h3>
+                            <p>via <span>Fast Systems Consultants</span></p>
+                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                            <p> <i class="fas fa-filter"></i>Accountancy</p>
+                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right_text">
+                            <span><a href=""><i class="fas fa-edit"></i></a></span>
+                            <p><i class="far fa-clock"></i> 1H ago</p>
+                        </div>
+
+                    </div>
+
+                    <!-- item -->
+                    <div class="tabs_item_part d_flex d_justify">
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_assets/images/02.svg" alt="">
+                        </div>
+
+                        <!-- Middle -->
+                        <div class="middle_text">
+                            <h3><a href="">Anticoagulation Receptionist</a></h3>
+                            <p>via <span>Fast Systems Consultants</span></p>
+                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                            <p> <i class="fas fa-filter"></i>Accountancy</p>
+                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right_text">
+                            <span><i class="far fa-heart"></i></span>
+                            <p><i class="far fa-clock"></i> 1H ago</p>
+                        </div>
+
+                    </div>
+
+                    <!-- item -->
+                    <div class="tabs_item_part d_flex d_justify">
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_assets/images/17.svg" alt="">
+                        </div>
+
+                        <!-- Middle -->
+                        <div class="middle_text">
+                            <h3><a href="">Anticoagulation Receptionist</a></h3>
+                            <p>via <span>Fast Systems Consultants</span></p>
+                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                            <p> <i class="fas fa-filter"></i>Accountancy</p>
+                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right_text">
+                            <span><i class="far fa-heart"></i></span>
+                            <p><i class="far fa-clock"></i> 1H ago</p>
+                        </div>
+
+                    </div>
+
+                    <!-- item -->
+                    <div class="tabs_item_part d_flex d_justify">
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_assets/images/18.svg" alt="">
+                        </div>
+
+                        <!-- Middle -->
+                        <div class="middle_text">
+                            <h3><a href="">Anticoagulation Receptionist</a></h3>
+                            <p>via <span>Fast Systems Consultants</span></p>
+                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                            <p> <i class="fas fa-filter"></i>Accountancy</p>
+                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right_text">
+                            <span><i class="far fa-heart"></i></span>
+                            <p><i class="far fa-clock"></i> 1H ago</p>
+                        </div>
+
+                    </div>
+
+                    <!-- item -->
+                    <div class="tabs_item_part d_flex d_justify">
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_assets/images/20.svg" alt="">
+                        </div>
+
+                        <!-- Middle -->
+                        <div class="middle_text">
+                            <h3><a href="">Anticoagulation Receptionist</a></h3>
+                            <p>via <span>Fast Systems Consultants</span></p>
+                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
+                            <p> <i class="fas fa-filter"></i>Accountancy</p>
+                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right_text">
+                            <span><i class="far fa-heart"></i></span>
+                            <p><i class="far fa-clock"></i> 1H ago</p>
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="row">
+
+                        <div class="col-lg-5 m-auto">
+
+                            <div class="PageChange">
+            
+                                <ul>
+                                    <li><a href="">Prev</a></li>
+                                    <li><a href="" class="active">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">...</a></li>
+                                    <li><a href="">25</a></li>
+                                    <li><a href="">Next</a></li>
+                                </ul>
+            
+                            </div>
+            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<footer id="footer" class="othersFooter">
+
+    <!-- Tiny Footer -->
+    <div class="Others_tiny_footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- left -->
+                <div class="col-lg-6">
+                   
+                    <div class="left">
+
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">TeamContact</a></li>
+                            <li><a href="">Contact</a></li> 
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-6">
+                   
+                    <div class="right">
+
+                        <p>©Copyright 2022 <a href="">System Decoder</a> All Rights Reserved</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+
+
+    <!-- JS Link -->
+    <script src="frontend_assets/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_assets/js/owl.carousel.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/all.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/apexcharts.min.js"></script>
+    <script src="frontend_assets/js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+
+    <script>
+        var options = {
+            chart: {
+                height: 350,
+                type: 'area',
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            series: [{
+                name: 'series1',
+                data: [31, 40, 28, 51, 42, 109, 100]
+            }, {
+                name: 'series2',
+                data: [11, 32, 45, 32, 34, 52, 41]
+            }],
+            colors: ['#ff8a00', '#001935'],
+
+            xaxis: {
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            }
+        }
+
+        var chart = new ApexCharts(
+            document.querySelector("#chart"),
+            options
+        );
+
+        chart.render();
+    </script>
+
+</body>
+
+</html>

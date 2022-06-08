@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    
+    <link rel="stylesheet" href="frontend_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_assets/css/style.css">
+    <link rel="stylesheet" href="frontend_assets/css/apexcharts.css">
+    <link rel="stylesheet" href="frontend_assets/css/media.css">
+    
+
+</head>
+
+<body>
+
+<div class="jog_grid_page DashboardCandidate">
+  
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_assets/images/logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link d_flex" href="job_grid.html">Job List </a>
+
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Job Grid</a></li>
+                        <li><a href="">Job Listing</a></li>
+                        <li><a href="">Job Details</a></li>
+                        <li><a href="">Job Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="employee_grid.html">Employer List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Employee Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Employee Details</a></li>
+                        <li><a href="">Employee Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="candidate_list.html">Candidates List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Candidates Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Candidates Details</a></li>
+                        <li><a href="">Candidates Details Map</a></li>
+                        <li>
+                            <a href="">Dashboard</a>
+
+                            <ul class="drop_down send box_shodow">
+                                <li><a href="">Employee Grid</a></li>
+                                <li><a href="">Employee Listing</a></li>
+                                <li><a href="">Employee Details</a></li>
+                                <li><a href="">Employee Details Map</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">My Resume</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard_candidate.html">Dashboard Candidates</a>
+                </li>
+
+            </ul>
+            
+            <form class="post_a_job_part">
+                <a href="" class="signIn"><i class="far fa-user"></i> Sign in</a>
+                <a href="" class="post_a_job"><i class="fas fa-plus-circle"></i> Post a Job</a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="dashboardBanner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- profile img -->
+            <div class="col-lg-6">
+
+                <div class="profile_part d_flex">
+
+                    <div class="profile_img">
+                        <img src="frontend_assets/images/Featured1.jpg" alt="">
+                        <a href=""><i class="fas fa-pencil-alt"></i></a>
+                    </div>
+
+                    <h2>Felica Queen</h2>
+
+                </div>
+
+            </div>
+
+            <!-- Sklis Parts -->
+            <div class="col-lg-6">
+
+                <div class="dashboardBanner_content">
+
+                    <div class="prograss_part">
+                        <span>85%</span>
+                        <div class="progress">
+                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="parcentage d_flex d_justify">
+
+                        <!-- left -->
+                        <div class="left">
+                            <h2>85%</h2>
+                            <p>Skills increased by job Title.</p>
+                        </div>
+
+                        <!-- right -->
+                        <div class="right">
+                            <a href="">Complete Required Skills</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Navs -->
+        <div class="dashBoard_content">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="dashBoardMenu">
+
+                        <ul>
+
+                            <li><a href="dashboard_candidate.html">Dashboard</a></li>
+                            <li><a href="my_profile.html" class="active">My Profile</a></li>
+                            <li><a href="change_password.html">Change Password</a></li>
+                            <li><a href="my_resume.html">My Resume</a></li>
+                            <li><a href="manage_jobs.html">Manage Jobs</a></li>
+                            <li><a href="saved_jobs.html">Saved Jobs</a></li>
+                            <li><a href="pricing_plan.html">Pricing Plan</a></li>
+                            <li><a href="log_out.html">Log Out</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Basic Information PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="BasicInformation"  class="space_ptb">
+
+    <div class="container">
+
+        <form action="">
+
+            <!-- Personal Information -->
+            <div class="form_part">
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <h3>Basic Information</h3>
+                    </div>
+        
+                    <!-- Upload Part -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <p>
+                                <span>Upload Cover Photo</span>
+                                <input class="upload" type="file">
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Name -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Name">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Date of birth -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Date of birth</label>
+                            <input type="date" placeholder="08/11/1999">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Phone -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+(123) 345-6789">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Gender -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input d_flex">
+        
+                            <div class="d_flex">
+                                <input type="radio" class="form-check-input" id="male" name="Gender">
+                                <label for="male">Male</label>
+                            </div>
+        
+                            <div class="d_flex">
+                                <input type="radio" class="form-check-input" id="female" name="Gender">
+                                <label for="female">Female</label>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                    <!-- Job Name -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Job Name</label>
+                            <input type="text" placeholder="General Insurance">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Job Title -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Job Title</label>
+                            <select class="js-example-basic-single" name="state">
+                                <option value="AL">Test Selector</option>
+                                <option value="AL">Test Selector</option>
+                                <option value="AL">Test Selector</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Salary -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Salary</label>
+                            <input type="text" placeholder="$2323">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Description -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <label>Description</label>
+                            <textarea name="" rows="3"></textarea>
+                        </div>
+        
+                    </div>
+        
+                </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="form_part">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <h3>Social Links</h3>
+                    </div>
+        
+                    <!-- Name -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Facebook</label>
+                            <input type="text" placeholder="https://www.facebook.com/">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Twitter</label>
+                            <input type="text" placeholder="https://www.facebook.com/">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Phone -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <label>Twitter</label>
+                            <input type="text" placeholder="https://www.twitter.com/">
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Address -->
+            <div class="form_part">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <h3>Address</h3>
+                    </div>
+        
+                    <!-- Name -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <label>Enter Your Location</label>
+                            <input type="text" placeholder="Enter Your Location">
+                        </div>
+        
+                    </div>
+
+                    <!-- Maps -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <div class="map_img">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440397.013442554!2d26.691198795769363!3d48.255832343253616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d0436a96a9fe3d%3A0x9dafc89ce4ff4d29!2sEnvato.best!5e0!3m2!1sen!2sbd!4v1654622104919!5m2!1sen!2sbd" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Save -->
+            <div class="col-lg-12">
+        
+                <div class="custome_input">
+                    <button>Save Settings</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<footer id="footer" class="othersFooter">
+
+    <!-- Tiny Footer -->
+    <div class="Others_tiny_footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- left -->
+                <div class="col-lg-6">
+                   
+                    <div class="left">
+
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">TeamContact</a></li>
+                            <li><a href="">Contact</a></li> 
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-6">
+                   
+                    <div class="right">
+
+                        <p>©Copyright 2022 <a href="">System Decoder</a> All Rights Reserved</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+
+
+    <!-- JS Link -->
+    <script src="frontend_assets/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_assets/js/owl.carousel.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/all.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/apexcharts.min.js"></script>
+    <script src="frontend_assets/js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+
+
+</body>
+
+</html>

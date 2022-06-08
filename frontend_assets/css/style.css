@@ -73,6 +73,10 @@ body {
     padding: 0 60px;
 }
 
+.container{
+    padding: 0;
+}
+
 
 /* =============== COMMON CSS FOR WEB SITE =============== */
 :root{
@@ -180,6 +184,30 @@ ul li{
     font-weight: 400;
     line-height: 24px;
     color: var(--text_color);
+}
+
+input{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input::placeholder{
+    font-size: 14px;
+    color: var(--text_color);
+}
+
+button{
+    background: var(--bg_color1);
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button:hover{
+    background: var(--hover_color);
 }
 
 
@@ -589,11 +617,12 @@ ul.drop_down.send.box_shodow {
     color: var(--bg_color1);
 }
 
-.tabs_item_part .img{
+.tabs_item_part .img {
     padding: 10px;
     border: 1px solid #eee;
-    width: 15%;
+    /* width: 15%; */
     margin-right: 20px;
+    display: inline-block;
 }
 
 .tabs_item_part .img img {
@@ -2009,20 +2038,465 @@ span.select2-dropdown.select2-dropdown--below {
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START  PART
+    START employee PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.employeePart .search{
+    margin-top: 5px;
+    position: relative;
+}
+
+.employeePart .search.location{
+    margin-top: 30px;
+}
+
+.employeePart .search input {
+    padding: 15px;
+    border: 1px solid #eee;
+    width: 100%;
+}
+
+.employeePart .search svg{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--bg_color1);
+}
+
+.employeePart .DatePosted{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.employeePart .DatePosted.last_child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.employeePart .DatePosted h3{
+    font-size: 16px;
+    color: var(--bg_color2);
+}
+
+.employeePart .DatePosted h3 a{
+    width: 20px;
+    color: var(--bg_color2);
+    font-size: 15px;
+}
+
+.dropDown_part.show_filter_item {
+    margin-top: 0;
+}
+
+.employeePart .show_filter_item ul li input[type="checkbox"]{
+    margin: 0;
+}
+
+.employeePar .show_filter_item input#lastour {
+    margin: 0;
+}
+
+.dropDown_part.show_filter_item ul{
+    margin-top: 0;
+}
+
+.dropDown_part.show_filter_item ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
 
 
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START DashboardCandidate PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#dashboardBanner{
+    background: #f6f6f6;
+    padding: 150px 0;
+    padding-bottom: 80px;
+}
+
+
+#dashboardBanner .container{
+    position: relative;
+}
+
+.profile_img{
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#dashboardBanner h2::after{
+    display: none;
+}
+
+.profile_img img{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+}
+
+.profile_img a {
+    position: absolute;
+    bottom: 15px;
+    right: -10px;
+    background: #FFF;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg_color1);
+    border: 1px solid #eee;
+}
+
+.prograss_part span{
+    color: var(--text_color);
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.prograss_part .progress {
+    height: 3px;
+    background: #CCC;
+}
+
+.progress-bar{
+    background: var(--bg_color1);
+}
+
+.parcentage{
+    margin-top: 20px;
+}
+
+.parcentage h2{
+    color: var(--bg_color1);
+    padding-bottom: 5px;
+}
+
+.parcentage a{
+    background: var(--bg_color2);
+    color: #FFF;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+
+.parcentage a:hover{
+    background: #00254f;
+}
+
+
+/* dashBoardMenu_content */
+.dashBoard_content {
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    padding: 10px;
+    border: 2px solid #eee;
+    width: 100%;
+}
+
+.dashBoard_content ul li{
+    display: inline-block;
+}
+
+.dashBoard_content ul li a{
+    padding: 8px 15px;
+    border-radius: 3px;
+    color: var(--text_color);
+    margin-right: 5px;
+}
+
+.dashBoard_content ul li a:hover{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+.dashBoard_content ul li a.active{
+    background: var(--bg_color1);
+    color: #FFF;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Total Applications PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.TotalApplications_item{
+    padding: 0 20px;
+    border-radius: 1px;
+    background: var(--bg_color2);
+    color: #FFF;
+    padding-right: 0;
+}
+
+.TotalApplications_item.middle{
+    background: #198754;
+}
+
+.TotalApplications_item.right{
+    background: #dc3545;
+}
+
+.TotalApplications_item svg{
+    font-size: 30px;
+}
+
+.TotalApplications_item .left{
+    width: 10%;
+    margin-right: 20px;
+}
+
+.TotalApplications_item .middle{
+    width: 65%;
+}
+
+.TotalApplications_item .right{
+    width: 25%;
+    padding: 25px;
+    border-left: 1px solid #FFF;
+    text-align: center;
+}
+
+.TotalApplications_item h3{
+    font-size: 16px;
+}
+
+.TotalApplications_item h4{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
 
 
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START  PART
+    START Total Applications PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+#RecentAppliedJobs{
+    margin-top: 30px;
+    
+}
+
+.Chart_part_content {
+    border: 2px solid #eee;
+    padding: 30px;
+}
+
+.RecentAppliedJobs_content{
+    padding: 20px;
+    border: 1px solid #EEE;
+}
+
+.RecentAppliedJobs_content h3{
+    margin-bottom: 30px;
+}
+
+.RecentAppliedJobs_content .tabs_item_part{
+    align-items: center;
+}
+
+.RecentAppliedJobs_content .tabs_item_part .middle_text {
+    width: 75%;
+}
+
+.RecentAppliedJobs_content .tabs_item_part .right_text {
+    width: 10%;
+}
+
+.RecentAppliedJobs_content .tabs_item_part .middle_text h3{
+    margin-bottom: 0;
+}
+
+.RecentAppliedJobs_content .tabs_item_part .right_text span{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.RecentAppliedJobs_content .tabs_item_part .right_text span a{
+    color: var(--bg_color1);
+}
+
+.RecentAppliedJobs_content .tabs_item_part .right_text p {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.RecentAppliedJobs_content .PageChange{
+    margin-bottom: 30px;
+}
+
+
+/* Basic Information */
+#BasicInformation .custome_input{
+    margin-top: 20px; 
+}
+
+#BasicInformation .custome_input label{
+    margin-bottom: 5px;
+    color: var(--text_color);
+}
+
+#BasicInformation .custome_input input{
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+#BasicInformation .custome_input textarea{
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+#BasicInformation .custome_input p{
+    position: relative;
+    background: var(--bg_color1);
+    padding: 10px 20px;
+    border-radius: 3px;
+    display: inline-block;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#BasicInformation .custome_input p span{
+    z-index: 9;
+}
+
+#BasicInformation .custome_input .upload{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.custome_input.d_flex div {
+    width: 16%;
+}
+
+#BasicInformation .custome_input.d_flex div input{
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin: 0;
+    border: 2px solid #eee;
+}
+
+#BasicInformation .custome_input.d_flex div label{
+    margin: 0;
+    margin-left: 10px;
+}
+
+#BasicInformation .custome_input.d_flex div .form-check-input:checked {
+    background-color: var(--bg_color1);
+    border-color: var(--bg_color1);
+}
+
+#BasicInformation .custome_input select{
+    width: 100%;
+    padding: 12px;
+}
+
+#BasicInformation  .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    display: none;
+}
+
+.form_part {
+    padding: 20px;
+    border: 2px solid #eee;
+    margin-bottom: 30px;
+}
 
 
 
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START MyResume PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.MyResume{
+    margin-bottom: 20px;
+}
+
+.MyResume a{
+    background: var(--bg_color1);
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+
+.MyResume h2::after{
+    display: none;
+}
+
+.TitlePart{
+    background: #f6f6f6;
+    padding: 20px;
+}
+
+/* candidate_resume */
+
+.candidate_resume{
+    position: relative;
+    z-index: 9;
+}
+
+.candidate_resume::after {
+    position: absolute;
+    content: '';
+    left: 23px;
+    top: 0;
+    height: 100px;
+    background: #eee;
+    width: 2px;
+    z-index: 1;
+}
+
+.candidate_resume .svg{
+    background: #FFF;
+    border: 2px solid #eee;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+
+.candidate_resume .svg svg{
+    font-size: 20px;
+}
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -2142,11 +2616,6 @@ span.select2-dropdown.select2-dropdown--below {
     margin-top: 5px;
 }
 
-.footer_item input::placeholder{
-    font-size: 14px;
-    color: var(--text_color);
-}
-
 #footer .footer_item ul li a.getNotification{
     background: var(--bg_color1);
     color: #FFF;
@@ -2239,4 +2708,10 @@ li.PlayStore {
     color: #FFF;
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+/* Dashboart Footer */
+.DashboardCandidate .othersFooter {
+    padding: 0;
+    margin-top: 80px;
 }
