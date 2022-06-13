@@ -40,7 +40,7 @@ input{
 }
 
 input:focus{
-    outline: 0;
+    outline: 1px solid var(--bg_color1);
 }
 
 .dropdown-item {
@@ -2465,23 +2465,25 @@ span.select2-dropdown.select2-dropdown--below {
 
 /* candidate_resume */
 
-.candidate_resume{
+.candidate_resume {
     position: relative;
     z-index: 9;
+    margin-top: 30px;
+    margin-left: 80px;
 }
 
 .candidate_resume::after {
     position: absolute;
     content: '';
-    left: 23px;
+    left: -56px;
     top: 0;
-    height: 100px;
+    height: 100%;
     background: #eee;
     width: 2px;
     z-index: 1;
 }
 
-.candidate_resume .svg{
+.candidate_resume .svg {
     background: #FFF;
     border: 2px solid #eee;
     width: 50px;
@@ -2492,11 +2494,159 @@ span.select2-dropdown.select2-dropdown--below {
     align-items: center;
     position: relative;
     z-index: 9;
+    top: 0;
+    left: -80px;
 }
 
 .candidate_resume .svg svg{
     font-size: 20px;
 }
+
+.candidate_resume .education_Info h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text_color);
+}
+
+.candidate_resume .education_Info h3{
+    color: var(--bg_color1);
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.candidate_resume .education_Info h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--bg_color2);
+}
+
+.candidate_resume .education_Info p{
+    margin-top: 15px;
+}
+
+.candidate_resume .education_Info {
+    margin: 30px 0;
+}
+
+.TitlePart span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+}
+
+.education_Info .collapse {
+    margin: 30px 0;
+}
+
+.candidate_resume .education_Info .header_part{
+    position: relative;
+}
+
+.candidate_resume .education_Info .header_part .overlay {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -63px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFF;
+    border: 1px solid var(--bg_color1);
+    z-index: 9;
+}
+
+.candidate_resume .education_Info .header_part .overlay::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    width: 25px;
+    height: 2px;
+    background: #eee;
+}
+
+.candidate_resume .education_Info .right svg{
+    color: var(--bg_color1);
+}
+
+.group_title .custome_input.text-center a {
+    margin-top: 30px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Manage Jobs PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#BasicInformation .manage_jobs .header_part .custome_input{
+    margin-top: 0;
+    position: relative;
+}
+
+#BasicInformation .manage_jobs .header_part .custome_input .search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--bg_color1);
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 0 3px 3px 0;
+}
+
+#BasicInformation .manage_jobs .header_part .custome_input input{
+    padding: 15px 20px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .header_part h3{
+    margin-bottom: 0;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part{
+    margin-top: 30px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part th{
+    background: #F6F6F6;
+    border-right: 1px solid #eee;
+    font-size: 14px;
+    color: var(--bg_color2);
+    padding: 10px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part ul li{
+    color: var(--text_color);
+    margin-bottom: 5px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part ul li:first-child{
+    font-weight: 700;
+    color: var(--bg_color2);
+    font-size: 15px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part td{
+    border-right: 1px solid #eee;
+    font-size: 14px;
+    color: var(--text_color);
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part a{
+    color: var(--bg_color1);
+    margin: 0 5px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .PageChange {
+    margin: 20px 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -2588,6 +2738,9 @@ span.select2-dropdown.select2-dropdown--below {
 .social_icon a:last-child{
     margin-right: 0;
 }
+
+
+
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
