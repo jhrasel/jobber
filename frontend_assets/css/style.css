@@ -2375,10 +2375,11 @@ span.select2-dropdown.select2-dropdown--below {
 }
 
 #BasicInformation .custome_input p span{
-    z-index: 9;
+    z-index: -1;
+    cursor: pointer;
 }
 
-#BasicInformation .custome_input .upload{
+#BasicInformation .custome_input .upload {
     position: absolute;
     top: 0;
     left: 0;
@@ -2386,7 +2387,7 @@ span.select2-dropdown.select2-dropdown--below {
     height: 100%;
     opacity: 0;
     cursor: pointer;
-    z-index: -1;
+    z-index: 1;
 }
 
 .custome_input.d_flex div {

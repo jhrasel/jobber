@@ -202,14 +202,14 @@
 
                         <ul>
 
-                            <li><a href="dashboard_candidate.html">Dashboard</a></li>
-                            <li><a href="my_profile.html">My Profile</a></li>
-                            <li><a href="change_password.html">Change Password</a></li>
-                            <li><a href="my_resume.html">My Resume</a></li>
-                            <li><a href="manage_jobs.html">Manage Jobs</a></li>
-                            <li><a href="saved_jobs.html" class="active">Saved Jobs</a></li>
-                            <li><a href="pricing_plan.html">Pricing Plan</a></li>
-                            <li><a href="log_out.html">Log Out</a></li>
+                            <li><a href="employee_dashboard.html">Dashboard</a></li>
+                            <li><a href="employee_my_profile.html" class="active">My Profile</a></li>
+                            <li><a href="employee_change_password.html">Change Password</a></li>
+                            <li><a href="employee_manage_candidates.html">Manage Candidates</a></li>
+                            <li><a href="employee_manage_jobs.html">Manage Jobs</a></li>
+                            <li><a href="employee_post_new_job.html">Post New Job</a></li>
+                            <li><a href="employee_pricing_plan.html">Pricing Plan</a></li>
+                            <li><a href="employee_log_out.html">Log Out</a></li>
 
                         </ul>
 
@@ -227,174 +227,232 @@
 
 
 
-<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START Total Applications PART
---------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<section id="TotalApplications" class="space_ptb"></section>
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START Recent Applied Jobs PART
+    START Basic Information PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<section id="RecentAppliedJobs">
+<section id="BasicInformation"  class="space_ptb">
 
     <div class="container">
 
-        <div class="row">
+        <form action="">
 
-            <div class="col-lg-12">
+            <!-- Personal Information -->
+            <div class="form_part">
 
-                <div class="RecentAppliedJobs_content">
+                <div class="row">
 
-                    <h3>Saved Jobs</h3>
-
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/01.svg" alt="">
-                        </div>
-
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><a href=""><i class="fas fa-edit"></i></a></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
+                    <div class="col-lg-6">
+                        <h3>Basic Information</h3>
                     </div>
-
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/02.svg" alt="">
+        
+                    <!-- Upload Part -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <p>
+                                <span>Upload Cover Photo</span>
+                                <input type="file" class="upload">
+                            </p>
                         </div>
-
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
+        
                     </div>
-
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/17.svg" alt="">
+        
+                    <!-- Name -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Name">
                         </div>
-
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
+        
                     </div>
-
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/18.svg" alt="">
+        
+                    <!-- Email -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
                         </div>
-
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
+        
                     </div>
-
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/20.svg" alt="">
+        
+                    <!-- Date of birth -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Date of birth</label>
+                            <input type="date" placeholder="08/11/1999">
                         </div>
-
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
+        
                     </div>
-
-                    
-                    <div class="row">
-
-                        <div class="col-lg-5 m-auto">
-
-                            <div class="PageChange">
-            
-                                <ul>
-                                    <li><a href="">Prev</a></li>
-                                    <li><a href="" class="active">1</a></li>
-                                    <li><a href="">2</a></li>
-                                    <li><a href="">3</a></li>
-                                    <li><a href="">...</a></li>
-                                    <li><a href="">25</a></li>
-                                    <li><a href="">Next</a></li>
-                                </ul>
-            
+        
+                    <!-- Phone -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+(123) 345-6789">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Gender -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input d_flex">
+        
+                            <div class="d_flex">
+                                <input type="radio" class="form-check-input" id="male" name="Gender">
+                                <label for="male">Male</label>
                             </div>
-            
+        
+                            <div class="d_flex">
+                                <input type="radio" class="form-check-input" id="female" name="Gender">
+                                <label for="female">Female</label>
+                            </div>
+        
                         </div>
+        
+                    </div>
+        
+                    <!-- Job Name -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Job Name</label>
+                            <input type="text" placeholder="General Insurance">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Job Title -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Job Title</label>
+                            <select class="js-example-basic-single" name="state">
+                                <option value="AL">Test Selector</option>
+                                <option value="AL">Test Selector</option>
+                                <option value="AL">Test Selector</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Salary -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Salary</label>
+                            <input type="text" placeholder="$2323">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Description -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <label>Description</label>
+                            <textarea name="" rows="3"></textarea>
+                        </div>
+        
+                    </div>
+        
+                </div>
 
+            </div>
+
+            <!-- Social Links -->
+            <div class="form_part">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <h3>Social Links</h3>
+                    </div>
+        
+                    <!-- Name -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Facebook</label>
+                            <input type="text" placeholder="https://www.facebook.com/">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="col-lg-6">
+        
+                        <div class="custome_input">
+                            <label>Twitter</label>
+                            <input type="text" placeholder="https://www.facebook.com/">
+                        </div>
+        
+                    </div>
+        
+                    <!-- Phone -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <label>Twitter</label>
+                            <input type="text" placeholder="https://www.twitter.com/">
+                        </div>
+        
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
+            <!-- Address -->
+            <div class="form_part">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <h3>Address</h3>
+                    </div>
+        
+                    <!-- Name -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <label>Enter Your Location</label>
+                            <input type="text" placeholder="Enter Your Location">
+                        </div>
+        
+                    </div>
+
+                    <!-- Maps -->
+                    <div class="col-lg-12">
+        
+                        <div class="custome_input">
+                            <div class="map_img">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440397.013442554!2d26.691198795769363!3d48.255832343253616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d0436a96a9fe3d%3A0x9dafc89ce4ff4d29!2sEnvato.best!5e0!3m2!1sen!2sbd!4v1654622104919!5m2!1sen!2sbd" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Save -->
+            <div class="col-lg-12">
+        
+                <div class="custome_input">
+                    <button>Save Settings</button>
+                </div>
+
+            </div>
+
+        </form>
 
     </div>
 
@@ -476,45 +534,6 @@
         });
     </script>
 
-    <script>
-        var options = {
-            chart: {
-                height: 350,
-                type: 'area',
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'smooth'
-            },
-            series: [{
-                name: 'series1',
-                data: [31, 40, 28, 51, 42, 109, 100]
-            }, {
-                name: 'series2',
-                data: [11, 32, 45, 32, 34, 52, 41]
-            }],
-            colors: ['#ff8a00', '#001935'],
-
-            xaxis: {
-                type: 'datetime',
-                categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
-            },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                },
-            }
-        }
-
-        var chart = new ApexCharts(
-            document.querySelector("#chart"),
-            options
-        );
-
-        chart.render();
-    </script>
 
 </body>
 

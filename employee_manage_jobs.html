@@ -202,14 +202,14 @@
 
                         <ul>
 
-                            <li><a href="dashboard_candidate.html">Dashboard</a></li>
-                            <li><a href="my_profile.html">My Profile</a></li>
-                            <li><a href="change_password.html">Change Password</a></li>
-                            <li><a href="my_resume.html">My Resume</a></li>
-                            <li><a href="manage_jobs.html">Manage Jobs</a></li>
-                            <li><a href="saved_jobs.html" class="active">Saved Jobs</a></li>
-                            <li><a href="pricing_plan.html">Pricing Plan</a></li>
-                            <li><a href="log_out.html">Log Out</a></li>
+                            <li><a href="employee_dashboard.html">Dashboard</a></li>
+                            <li><a href="employee_my_profile.html">My Profile</a></li>
+                            <li><a href="employee_change_password.html">Change Password</a></li>
+                            <li><a href="employee_manage_candidates.html">Manage Candidates</a></li>
+                            <li><a href="employee_manage_jobs.html" class="active">Manage Jobs</a></li>
+                            <li><a href="employee_post_new_job.html">Post New Job</a></li>
+                            <li><a href="employee_pricing_plan.html">Pricing Plan</a></li>
+                            <li><a href="employee_log_out.html">Log Out</a></li>
 
                         </ul>
 
@@ -226,16 +226,10 @@
 </section>
 
 
-
-<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
-    START Total Applications PART
---------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<section id="TotalApplications" class="space_ptb"></section>
-
 <!----------------------------------------------------------------------------------------------------------------------------------------------------- 
     START Recent Applied Jobs PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<section id="RecentAppliedJobs">
+<section id="BasicInformation" class="space_ptb">
 
     <div class="container">
 
@@ -243,131 +237,157 @@
 
             <div class="col-lg-12">
 
-                <div class="RecentAppliedJobs_content">
+                <div class="RecentAppliedJobs_content manage_jobs">
 
-                    <h3>Saved Jobs</h3>
+                    <div class="header_part">
 
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/01.svg" alt="">
-                        </div>
+                        <div class="row d_flex">
 
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
+                            <div class="col-lg-6">
+                                <h3>Manage Jobs</h3>
+                            </div>
 
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><a href=""><i class="fas fa-edit"></i></a></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
+                            <div class="col-lg-6">
 
-                    </div>
+                                <div class="custome_input">
+                                    <input type="text" name="" placeholder="Search....">
 
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/02.svg" alt="">
-                        </div>
+                                    <div class="search">
+                                        <i class="fas fa-search"></i>
+                                    </div>
 
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
+                                </div>
 
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
+                            </div>
+
                         </div>
 
                     </div>
 
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/17.svg" alt="">
-                        </div>
 
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
 
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
+                    <!-- Table Part -->
+                    <div class="table_part">
+
+                        <table class="table border">
+
+                            <!-- header -->
+                            <tr>
+                                <th>Job Title</th>
+                                <th>Applications</th>
+                                <th>Featured</th>
+                                <th>Status</th>
+                            </tr>
+
+                            <!-- Details Part -->
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Job 01</li>
+                                        <li>Expiry: 2020-04-15</li>
+                                        <li>Address: Wellesley Rd, London</li>
+                                    </ul>
+                                </td>
+                                <td>Applications</td>
+                                <td><i class="far fa-star"></i></td>
+                                <td>
+                                    <a href="" class=""><i class="far fa-eye"></i></a>
+                                    <a href="" class="text-info"><i class="fas fa-pencil-alt"></i></a>
+                                    <a href="" class="text-danger"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Job 01</li>
+                                        <li>Expiry: 2020-04-15</li>
+                                        <li>Address: Wellesley Rd, London</li>
+                                    </ul>
+                                </td>
+                                <td>Applications</td>
+                                <td><i class="far fa-star"></i></td>
+                                <td>
+                                    <a href="" class=""><i class="far fa-eye"></i></a>
+                                    <a href="" class="text-info"><i class="fas fa-pencil-alt"></i></a>
+                                    <a href="" class="text-danger"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Job 01</li>
+                                        <li>Expiry: 2020-04-15</li>
+                                        <li>Address: Wellesley Rd, London</li>
+                                    </ul>
+                                </td>
+                                <td>Applications</td>
+                                <td><i class="far fa-star"></i></td>
+                                <td>
+                                    <a href="" class=""><i class="far fa-eye"></i></a>
+                                    <a href="" class="text-info"><i class="fas fa-pencil-alt"></i></a>
+                                    <a href="" class="text-danger"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Job 01</li>
+                                        <li>Expiry: 2020-04-15</li>
+                                        <li>Address: Wellesley Rd, London</li>
+                                    </ul>
+                                </td>
+                                <td>Applications</td>
+                                <td><i class="far fa-star"></i></td>
+                                <td>
+                                    <a href="" class=""><i class="far fa-eye"></i></a>
+                                    <a href="" class="text-info"><i class="fas fa-pencil-alt"></i></a>
+                                    <a href="" class="text-danger"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Job 01</li>
+                                        <li>Expiry: 2020-04-15</li>
+                                        <li>Address: Wellesley Rd, London</li>
+                                    </ul>
+                                </td>
+                                <td>Applications</td>
+                                <td><i class="far fa-star"></i></td>
+                                <td>
+                                    <a href="" class=""><i class="far fa-eye"></i></a>
+                                    <a href="" class="text-info"><i class="fas fa-pencil-alt"></i></a>
+                                    <a href="" class="text-danger"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Job 01</li>
+                                        <li>Expiry: 2020-04-15</li>
+                                        <li>Address: Wellesley Rd, London</li>
+                                    </ul>
+                                </td>
+                                <td>Applications</td>
+                                <td><i class="far fa-star"></i></td>
+                                <td>
+                                    <a href="" class=""><i class="far fa-eye"></i></a>
+                                    <a href="" class="text-info"><i class="fas fa-pencil-alt"></i></a>
+                                    <a href="" class="text-danger"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+
+                        </table>
 
                     </div>
 
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/18.svg" alt="">
-                        </div>
 
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
-                    </div>
-
-                    <!-- item -->
-                    <div class="tabs_item_part d_flex d_justify">
-                        <!-- img -->
-                        <div class="img">
-                            <img src="frontend_assets/images/20.svg" alt="">
-                        </div>
-
-                        <!-- Middle -->
-                        <div class="middle_text">
-                            <h3><a href="">Anticoagulation Receptionist</a></h3>
-                            <p>via <span>Fast Systems Consultants</span></p>
-                            <p> <i class="fas fa-map-marker-alt"></i>Wellesley Rd, London</p>
-                            <p> <i class="fas fa-filter"></i>Accountancy</p>
-                            <p class="suitcase"> <i class="fas fa-suitcase"></i> Freelance</p>
-                        </div>
-
-                        <!-- Right -->
-                        <div class="right_text">
-                            <span><i class="far fa-heart"></i></span>
-                            <p><i class="far fa-clock"></i> 1H ago</p>
-                        </div>
-
-                    </div>
-
-                    
+                    <!-- Number Part -->
                     <div class="row">
 
                         <div class="col-lg-5 m-auto">
@@ -390,6 +410,7 @@
 
                     </div>
 
+
                 </div>
 
             </div>
@@ -399,7 +420,6 @@
     </div>
 
 </section>
-
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------- 
     START Others Footer PART
@@ -474,46 +494,6 @@
         $(document).ready(function() {
             $('.js-example-basic-single').select2();
         });
-    </script>
-
-    <script>
-        var options = {
-            chart: {
-                height: 350,
-                type: 'area',
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'smooth'
-            },
-            series: [{
-                name: 'series1',
-                data: [31, 40, 28, 51, 42, 109, 100]
-            }, {
-                name: 'series2',
-                data: [11, 32, 45, 32, 34, 52, 41]
-            }],
-            colors: ['#ff8a00', '#001935'],
-
-            xaxis: {
-                type: 'datetime',
-                categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"],
-            },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                },
-            }
-        }
-
-        var chart = new ApexCharts(
-            document.querySelector("#chart"),
-            options
-        );
-
-        chart.render();
     </script>
 
 </body>
