@@ -2868,3 +2868,187 @@ li.PlayStore {
     padding: 0;
     margin-top: 80px;
 }
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Login PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.Login_pages #dashboardBanner {
+    background: #f6f6f6;
+    padding: 130px 0;
+    padding-bottom: 60px;
+}
+
+.Login_pages .header h2{
+    color: var(--bg_color1);
+} 
+
+.Login_pages .header p{
+    font-size: 16px;
+}
+
+.Login_pages .header p span{
+    color: var(--bg_color1);
+}
+
+.login_Content{
+    margin-top: 80px;
+}
+
+#logInContent .header h2::after{
+    display: none;
+}
+
+.login_main_content{
+    margin-top: 50px;
+}
+
+.ChooseAccountType {
+    padding: 20px;
+    border: 1px solid #eee;
+    padding-top: 25px;
+    position: relative;
+}
+
+.ChooseAccountType .overlay {
+    position: absolute;
+    top: -17px;
+    left: 20px;
+    background: #FFF;
+    padding: 5px;
+}
+
+.ChooseAccountType .item{
+    padding: 15px;
+    border: 2px solid var(--bg_color2);
+    width: 48%;
+}
+
+.ChooseAccountType .item h3{
+    color: var(--bg_color2);
+}
+
+.ChooseAccountType .item p{
+    color: var(--bg_color2);
+}
+
+.ChooseAccountType .item:last-child{
+    margin-right: 0;
+}
+
+.ChooseAccountType .item .img{
+    margin-right: 20px;
+}
+
+.ChooseAccountType .item .img img{
+    height: 50px;
+}
+
+.ChooseAccountType .item.cantidate{
+    border: 2px solid var(--bg_color1);
+}
+
+.ChooseAccountType .item.cantidate h3{
+    color: var(--bg_color1);
+}
+
+.ChooseAccountType .item.cantidate p{
+    color: var(--bg_color1);
+}
+
+/* Form Part */
+.userName{
+    margin-top: 10px;
+}
+
+.userName .custome_input{
+    margin-top: 20px;
+}
+
+.userName .custome_input label {
+    margin-bottom: 5px;
+    color: var(--text_color);
+    font-size: 14px;
+}
+
+.userName .custome_input input{
+    border: 1px solid #eee;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.SignIn{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.SignIn a{
+    color: var(--bg_color1);
+    font-weight: 400;
+}
+
+.SignIn .left{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.SignIn .left a{
+    background: var(--bg_color1);
+    padding: 12px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.SignIn .left a:hover{
+    background: var(--hover_color);
+}
+
+/* login_with_Gmail */
+
+.login_with_Gmail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login_with_Gmail .item{
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.login_with_Gmail .item.last_child{
+    margin-bottom: 0;
+}
+
+.login_with_Gmail .item a{
+    color: #FFF;
+}
+
+.login_with_Gmail .item a svg{
+    margin-right: 20px;
+}
+
+.login_with_Gmail .item.fb{
+    background: #466ca9;
+}
+
+.login_with_Gmail .item.Twitter{
+    background: #20b5e6;
+}
+
+.login_with_Gmail .item.Google{
+    background: #d34836;
+}
+
+.login_with_Gmail .item.Linkedin{
+    background: #13799f;
+}

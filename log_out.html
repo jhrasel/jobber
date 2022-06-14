@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    
+    <link rel="stylesheet" href="frontend_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_assets/css/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_assets/css/style.css">
+    <link rel="stylesheet" href="frontend_assets/css/apexcharts.css">
+    <link rel="stylesheet" href="frontend_assets/css/media.css">
+    
+
+</head>
+
+<body>
+
+<div class="Login_pages">
+  
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_assets/images/logo.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link d_flex" href="job_grid.html">Job List </a>
+
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Job Grid</a></li>
+                        <li><a href="">Job Listing</a></li>
+                        <li><a href="">Job Details</a></li>
+                        <li><a href="">Job Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="employee_grid.html">Employer List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Employee Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Employee Details</a></li>
+                        <li><a href="">Employee Details Map</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="candidate_list.html">Candidates List</a>
+
+                    <!-- <ul class="drop_down box_shodow">
+                        <li><a href="">Candidates Grid</a></li>
+                        <li><a href="">Employee Listing</a></li>
+                        <li><a href="">Candidates Details</a></li>
+                        <li><a href="">Candidates Details Map</a></li>
+                        <li>
+                            <a href="">Dashboard</a>
+
+                            <ul class="drop_down send box_shodow">
+                                <li><a href="">Employee Grid</a></li>
+                                <li><a href="">Employee Listing</a></li>
+                                <li><a href="">Employee Details</a></li>
+                                <li><a href="">Employee Details Map</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">My Resume</a></li>
+                    </ul> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard_candidate.html">Dashboard Candidates</a>
+                </li>
+
+            </ul>
+            
+            <form class="post_a_job_part">
+                <a href="" class="signIn"><i class="far fa-user"></i> Sign in</a>
+                <a href="" class="post_a_job"><i class="fas fa-plus-circle"></i> Post a Job</a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="dashboardBanner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- profile img -->
+            <div class="col-lg-6 m-auto">
+
+                <div class="header text-center">
+
+                    <h2>Login</h2>
+                    <p>Home > <span>Login</span></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Login Part PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="logInContent" class="space_ptb">
+
+    <div class="container">
+
+        <!-- hader -->
+        <div class="row">
+            <div class="col-lg-8 m-auto">
+                <div class="header text-center">
+                    <h2>Login to Your Account</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="login_main_content">
+
+            <div class="row">
+
+                <div class="col-lg-8 m-auto">
+
+                    
+                    <form action="" method="POST">
+
+                        <!-- Candidate or Employee -->
+                        <div class="ChooseAccountType d_flex d_justify">
+
+                            <div class="overlay">
+                                <p>Choose your Account Type</p>
+                            </div>
+    
+                            <!-- cantidate -->
+                            <div class="item cantidate d_flex">
+    
+                                <div class="img">
+                                    <img src="frontend_assets/images/team.png" alt="">
+                                </div>
+    
+                                <div class="text">
+                                    <h3>Candidate</h3>
+                                    <p>Log in as Candidate</p>
+                                </div>
+    
+                            </div>
+    
+                            <!-- Employee -->
+                            <div class="item d_flex">
+    
+                                <div class="img">
+                                    <img src="frontend_assets/images/suitcase.png" alt="">
+                                </div>
+    
+                                <div class="text">
+                                    <h3>Candidate</h3>
+                                    <p>Log in as Candidate</p>
+                                </div>
+    
+                            </div>
+    
+                            <!-- Form_part -->
+    
+                        </div>
+    
+                        <!-- Form_part -->
+                        <div class="userName">
+    
+                            <!-- User Name -->
+                            <div class="custome_input">
+                                <label>Username / Email Address</label>
+                                <input type="text">
+                            </div>
+
+                            <!-- User Name -->
+                            <div class="custome_input">
+                                <label>Password*</label>
+                                <input type="text">
+                            </div>
+    
+                        </div>
+
+                        <!-- SignIn -->
+                        <div class="SignIn d_flex">
+
+                            <div class="left">
+                                <a href="">Sign In</a>
+                            </div>
+
+                            <div class="right">
+                                <a href="">Forgot Password?</a>
+                                <p>Don't have account? <a href="">Sign Up here</a></p>
+                            </div>
+
+                        </div>
+
+                        <!-- Candidate or Employee -->
+                        <div class="ChooseAccountType d_flex d_justify login_with_Gmail">
+
+                            <div class="overlay">
+                                <p>Login or Sign up with</p>
+                            </div>
+    
+                            <!-- Facebook -->
+                            <div class="item fb">
+                                <a href=""><i class="fab fa-facebook-f"></i> Login with Facebook</a>
+                            </div>
+    
+                            <!-- Facebook -->
+                            <div class="item Twitter">
+                                <a href=""><i class="fab fa-twitter me-4"></i> Login with Twitter</a>
+                            </div>
+
+                            <!-- Facebook -->
+                            <div class="item Google last_child">
+                                <a href=""><i class="fab fa-google me-4"></i> Login with Google</a>
+                            </div>
+
+                            <!-- Facebook -->
+                            <div class="item Linkedin last_child">
+                                <a href=""><i class="fab fa-linkedin-in"></i> Login with Linkedin</a>
+                            </div>
+    
+                        </div>
+
+                    </form>
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Others Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<footer id="footer" class="othersFooter">
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START Looking For Job PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section id="looking_for_job" class="Ohters_jobsPages">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Part -->
+            <div class="col-lg-6">
+
+                <div class="looking_for_job_item d_flex">
+
+                    <div class="img">
+                        <img src="frontend_assets/images/team (1).png" alt="">
+                    </div>
+
+                    <div class="text d_flex d_justify">
+                        <div class="">
+                            <h4>Jobseeker</h4>
+                            <h3 class="wh">Looking For Job?</h3>
+                        </div>
+                        <a href="">Apply now <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+
+                <div class="looking_for_job_item d_flex right">
+
+                    <div class="img">
+                        <img src="frontend_assets/images/headhunting.png" alt="">
+                    </div>
+
+                    <div class="text d_flex d_justify">
+                        <div class="">
+                            <h4>Recruiter</h4>
+                            <h3 class="wh">Are You Recruiting?</h3>
+                        </div>
+                        <a href="">Post a job <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="footer_bgs">
+        <svg class="footer-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="85px">
+            <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.000,-0.001 L1923.000,-0.001 L1923.000,84.999 C1608.914,41.669 1279.532,19.653 962.500,19.000 C635.773,18.326 323.692,40.344 -0.000,84.999 C-0.000,-83.334 -0.000,168.332 -0.000,-0.001 Z"></path>
+        </svg>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Trending Companies</h3>
+
+                    <ul>
+                        <li><a href="">Shortcodes</a></li>
+                        <li><a href="">Job Page</a></li>
+                        <li><a href="">Job Page Alternative</a></li>
+                        <li><a href="">Resume Page</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>For Employers</h3>
+
+                    <ul>
+                        <li><a href="">Browse Candidates</a></li>
+                        <li><a href="">Browse Categories</a></li>
+                        <li><a href="">Employer Dashboard</a></li>
+                        <li><a href="">Add Job</a></li>
+                        <li><a href="">Job Packages</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Trending Job</h3>
+
+                    <ul>
+                        <li><a href="">Sign Up to our Newsletter to get the latest news and offers.</a></li>
+                        <li><input type="text" name="" placeholder="Enter Email"></li>
+                        <li><a href="" class="getNotification">Get Notified</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="col-lg-3">
+
+                <div class="footer_item">
+
+                    <h3>Download App</h3>
+
+                    <ul>
+
+                        <li><a href="">Download the latest Slick new job apps now</a></li>
+
+                        <li class="PlayStore">
+                            <a href="" class="item d_flex">
+
+                                <div class="img">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+    
+                                <div class="text">
+                                    <h4>Download on the </h4>
+                                    <h3>App Store</h3>
+                                </div>
+    
+                            </a>
+                        </li>
+
+                        <li class="PlayStore">
+                            <a href="" class="item d_flex">
+
+                                <div class="img">
+                                    <i class="fab fa-google-play"></i>
+                                </div>
+    
+                                <div class="text">
+                                    <h4>Get it on </h4>
+                                    <h3>Google Play</h3>
+                                </div>
+    
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tiny Footer -->
+    <div class="Others_tiny_footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- left -->
+                <div class="col-lg-6">
+                   
+                    <div class="left">
+
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">TeamContact</a></li>
+                            <li><a href="">Contact</a></li> 
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-6">
+                   
+                    <div class="right">
+
+                        <p>©Copyright 2022 <a href="">System Decoder</a> All Rights Reserved</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+
+
+    <!-- JS Link -->
+    <script src="frontend_assets/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_assets/js/owl.carousel.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/all.min.js"></script>
+    <script src="frontend_assets/js/slick.min.js"></script>
+    <script src="frontend_assets/js/apexcharts.min.js"></script>
+    <script src="frontend_assets/js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+
+</body>
+
+</html>
