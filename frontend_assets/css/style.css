@@ -2645,6 +2645,53 @@ span.select2-dropdown.select2-dropdown--below {
     margin: 20px 0;
 }
 
+
+/* Job List Employee Managenement */
+
+.RecentAppliedJobs_content.manage_jobs.employee_manage th {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.RecentAppliedJobs_content.manage_jobs.employee_manage tr.tabs_item_part {
+    padding: 0;
+}
+
+.RecentAppliedJobs_content.manage_jobs.employee_manage .Featured_content .img {
+    border: none;
+    padding: 0;
+}
+
+.RecentAppliedJobs_content.manage_jobs .middle_text a{
+    color: var(--bg_color2);
+    margin: 0;
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part span{
+    color: var(--text_color);
+}
+
+.RecentAppliedJobs_content.manage_jobs .table_part span svg{
+    color: var(--bg_color1);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.RecentAppliedJobs_content.manage_jobs .middle_text a:hover{
+    color: var(--bg_color1);
+}
+
+.RecentAppliedJobs_content.manage_jobs.employee_manage  .table_part td {
+    padding: 25px 15px;
+    border: none;
+}
+
+.RecentAppliedJobs_content.manage_jobs.employee_manage .table_part.Featured_content {
+    margin-top: 0;
+}
+
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- 
     START Others Footer PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
